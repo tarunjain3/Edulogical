@@ -1193,32 +1193,6 @@ input.address_text::placeholder {
 /* footer section end */
 
 
-/* copyright section start */
-
-.copyright_section {
-    width: 100%;
-    float: left;
-    background-color: #222122;
-    height: auto;
-}
-
-.copyright_text {
-    width: 100%;
-    float: left;
-    font-size: 16px;
-    margin-left: 0px;
-    color: #fff;
-    text-align: center;
-}
-
-.copyright_text a {
-    color: #ffffff;
-}
-
-.copyright_text a:hover {
-    color: #ff5333;
-}
-
 
 /* copyright section end */
 
