@@ -55,7 +55,7 @@
 <div class="container">
   <main class="my-4 ">
     <div class="py-5 mx-2 text-center">
-      <img class="d-block mx-auto" src="logo.png" alt="" width="300" height="100">
+      <img class="d-block mx-auto" src="images\logo.png" alt="" width="300" height="100">
       <h2 class="heading">Coaching Institutes Contribution Form</h2>
       <p class="lead">Kindly fill in the required details of the coaching that helped you ace the exam.</p>
     </div>
@@ -77,11 +77,12 @@
 
       <div class="col-md-7 col-lg-8">
         <h4 class="mb-3 heading2" >Coaching Details</h4>
+
         <form class="needs-validation" novalidate>
           <div class="row g-3">
-            <div class="col-sm-6">
-              <label for="firstName" class="form-label">Coaching Name</label>
-              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            <div class="col-12">
+              <label for="name" class="form-label">Coaching Name</label>
+              <input type="text" class="form-control" id="name" placeholder="" value="" required>
               <div class="invalid-feedback">
                Name is required.
               </div>
@@ -161,7 +162,7 @@
               <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
               <input type="email" class="form-control" id="email" placeholder="name@example.com">
               <div class="invalid-feedback">
-                Please enter a valid email address to conatct.
+                Please enter a valid email address.
               </div>
             </div>
 
@@ -171,7 +172,8 @@
           <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ">
           </div>
 
-          <button class="w-50 btn btn-primary btn-lg mb-4 pl-2" type="submit">SUBMIT</button>
+          <button class="w-75 btn btn-primary btn-lg mb-4 mx-auto " type="submit">SUBMIT</button>
+
         </form>
       </div>
     </div>
@@ -181,9 +183,9 @@
 </div>
 
 
-    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-
-      <script src="form-validation.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+      <script src="js\coachingJS.js"></script>
       <script src='https://www.google.com/recaptcha/api.js'></script>
   </body>
 </html>
