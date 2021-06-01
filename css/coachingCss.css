@@ -1,0 +1,49 @@
+body{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ background-size: 100% 100%;
+}
+
+
+main{
+  background-color: rgba(228,239,231,0.7);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container {
+  max-width: 960px;
+
+}
+
+.heading{
+  font-family: 'Lobster', cursive;
+ font-family: 'Varela Round', sans-serif;
+}
+
+.heading2{
+    color: #e83e8c;
+    weight: bolder;
+    font-family: 'Squada One', sans-serif;
+    font-weight: bolder;
+}
+
+.contribute{
+  color: #e83e8c;
+  weight: bolder;
+  font-family: 'Squada One', sans-serif;
+  font-weight: bolder;
+}
+
+h5{
+  color:#3b14a7 ;
+  font-family: 'Rokkitt', serif;
+}
+
+.btn{
+  font-family: 'Limelight',serif;
+  background-color: #3b14a7 !important;
+}
+
+.btn:hover{
+  color :#e83e8c;
+}
