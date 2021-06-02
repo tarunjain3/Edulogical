@@ -28,6 +28,9 @@
    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
    <!-- fonts -->
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+   <!-- icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
    <!-- owl stylesheets -->
    <link rel="stylesheet" href="css/owl.carousel.min.css">
    <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -40,7 +43,7 @@
          transition: 0.3s;
          margin: 0;
          padding: 0;
-         
+
       }
 
       .cardElevation:hover {
@@ -70,7 +73,7 @@
                   <li class="nav-item">
                      <a class="nav-link" href="coaching.html">Coaching</a>
                   </li>
-                  
+
                   <li class="nav-item">
                      <a class="nav-link" href="donate.html">Contribute</a>
                   </li>
@@ -106,6 +109,53 @@
       </div>
    </div>
    <div id="reosources"></div>
+   <!-- Modal section start-->
+   <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+            <div class="modal-body ">
+               <div class="text-right"> <i class="fa fa-close close" data-dismiss="modal"></i> </div>
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="text-center mt-2"> <img src="images/img-7.png" height="500px">
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="mt-5">
+                        <h1 class="mb-0">bookName</h1>
+                        <table>
+                           <tr>
+                              <td>
+                                 <span class="intro-1">Author : </span>
+                              </td>
+                              <td><Strong class="intro-1">authorName</Strong></td><br>
+                           </tr>
+                           <tr>
+                              <td><span class="intro-1">Book edition : </span> </td>
+                              <td><Strong class="intro-1">2019 ,5th edition</Strong></td> <br>
+                           </tr>
+                           <tr>
+                              <td><span class="intro-1">Subject : </span></td>
+                              <td><Strong class="intro-1">subject</Strong></td><br>
+                           </tr>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <div class="mt-5 text-center">
+                  <div class="mt-4"> <span class="intro-2">Gain access to analytic tools, desktop apps,
+                        templates, read-through, features, and autp-translate all for the price of a pro
+                        subscriptionGain access to analytic tools,
+                        templates, read-through, features, and autp-tr</span> </div>
+                  <div class="mt-4 mb-5"> <button class="btn btn-primary">Get resource <i
+                           class="fa fa-download"></i></button> </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- modal part ends -->
    <script>
       var x = "";
       for (i = 1; i <= 6; i++) {
@@ -127,8 +177,7 @@
             '               <p class="ipsum_text"> ' + description + ' </p>' +
             // '               <h5 class="raised_text">Raised: $60,010     <span class="goal_text">Goal: $70,000</span></h5>' +
             '               <div class="donate_btn_main">' +
-            '                  <div class="readmore_btn_1"><a href="#">Read More</a></div>' +
-            // '                  <div class="readmore_btn_1"><a href="donate.html">Contribute Now</a></div>' +
+            '<button type="button" class=" readmore_btn_1 " data-toggle="modal" data-target="#staticBackdrop"><a href="#">Read More</a></div></button>' +
             '               </div>' +
             '            </div>' +
             '         </div>' +
@@ -203,7 +252,7 @@
       </div>
    </div>
    <!-- footer section end -->
-   
+
    <!-- Javascript files-->
    <script src="js/jquery.min.js"></script>
    <script src="js/popper.min.js"></script>
