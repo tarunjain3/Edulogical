@@ -61,3 +61,17 @@ h5{
 .g-recaptcha{
   margin: auto;
 }
+
+
+.checkbox{
+  margin-left: 5px !important;
+}
+
+a{
+  color:#3b14a7 ;
+  font-family: 'Rokkitt', serif;
+}
+
+a:hover{
+  color: #e83e8c;
+}
