@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Resources</title>
+    <title>Coaching</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -34,6 +34,9 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
         media="screen">
+    <!-- api implementation -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 
     <style>
         .cardElevation {
@@ -69,7 +72,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="exams.html">Exams</a>
                         </li>
-<li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="coaching.html">Coaching</a>
                         </li>
                         <li class="nav-item">
@@ -109,37 +112,60 @@
     </div>
     <div id="reosources"></div>
     <script>
+        var coachingName = "Coaching Centre Name";
+        var facultyName = "Faculty Name";
+        var description = "variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by<br>injected humour, or randomised v<br>";
+        var experince = "10";
+        var address = "UIET,Sec-25, Chandigarh";
+        var contact = "1234567890";
+        var exam = "JEE";
+        var subject = "PCM";
+        var email = "abc@gmail.com";
         var x = "";
-        for (i = 1; i <= 6; i++) {
-            var coachingName = "Coaching Centre Name";
-            var facultyName = "Faculty Name";
-            var description = "variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by<br>injected humour, or randomised v<br>";
-            var experince = "10 years";
-            var address = "UIET,Sec-25, Chandigarh";
-            var contact = "1234567890";
-            var exam = "JEE";
-            var subject = "PCM"
-            x = x + ' <div class="about_section layout_padding">' +
-                '   <div class="container">' +
-                '      <div class="row">' +
-                '         <div class="col-sm-8">' +
-                '            <h2 class="about_taital">'+i+')  ' + coachingName + '</h2>' +
-                '   <h1 style="color:white;"> Faculty : ' + facultyName + ' </h1>' +
-                '   <h1 class: "news_taital" style="color:white;"> have more than <strong>' + experince + ' of Experince</strong> </h1>' +
-                '            <p class="about_text">' + description + '</p>' +
-                '   <h3 style="color:white;"> Mainly expertize in ' + subject + " for " + exam + " exam" + ' </h3>' +
-                '   <h2 style="color:white;"> Contact number : ' + contact + ' </h2>' +
-                '   <h1 style="color:white;"> Address : ' + address + ' </h1> <br>' +
-                ' <div class="readmore_btn_1" style="text-align: center;"><a href="#">Know More</a></div> <br><br>' +
-                '         </div>' +
-                '         <div class="col-sm-4">' +
-                '            <div class="agbout_img"><img src="images/about-img.png"></div>' +
-                '         </div>' +
-                '      </div>' +
-                '   </div>' +
-                '</div>';
-        }
-        document.getElementById("reosources").innerHTML = x;
+        var data;
+        axios.get('http://f351badf5ceb.ngrok.io/coaching').then(response => {
+            console.log("api hit going on");
+            console.log(response.data);
+            data = response.data;
+
+
+
+            for (i = 0; i < data.length; i++) {
+                coachingName = data[i]["Coaching_Name"];
+                facultyName = data[i]["Faculty_Name"];
+                // description = datat[i]["Description"];
+                address = data[i]["Address"];
+                experince = data[i]["Teaching_experience"];
+                contact = data[i]["Contact_Number"];
+                exam = data[i]["Exam"];
+                subject = data[i]["Subject"];
+                email = data[i]["Email"];
+
+
+                x = x + ' <div class="about_section layout_padding">' +
+                    '   <div class="container">' +
+                    '      <div class="row">' +
+                    '         <div class="col-sm-8">' +
+                    '            <h2 class="about_taital">' + (i + 1) + ')  ' + coachingName + '</h2>' +
+                    '   <h1 style="color:white;"> Faculty : ' + facultyName + ' </h1>' +
+                    '   <h1 class: "news_taital" style="color:white;"> have more than <strong>' + experince + ' years of Experince</strong> </h1>' +
+                    '            <p class="about_text">' + description + '</p>' +
+                    '   <h3 style="color:white;"> Mainly expertize in ' + subject + " for " + exam + " exam" + ' </h3>' +
+                    '   <h2 style="color:white;"> Contact number : ' + contact + ' </h2>' +
+                    '   <h2 style="color:white;"> Email address : ' + email + ' </h2>' +
+                    '   <h1 style="color:white;"><Strong> Address : ' + address + '</Strong> </h1> <br>' +
+                    ' <div class="readmore_btn_1" style="text-align: center;"><a href="#">Know More</a></div> <br><br>' +
+                    '         </div>' +
+                    '         <div class="col-sm-4">' +
+                    '            <div class="agbout_img"><img src="images/about-img.png"></div>' +
+                    '         </div>' +
+                    '      </div>' +
+                    '   </div>' +
+                    '</div>';
+            }
+            document.getElementById("reosources").innerHTML = x;
+
+        });
     </script>
     <!-- news section end -->
     <!-- footer section start -->
@@ -206,7 +232,7 @@
         </div>
     </div>
     <!-- footer section end -->
-   
+
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>

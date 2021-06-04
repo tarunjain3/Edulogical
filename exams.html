@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Resources</title>
+    <title>Exams</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -37,6 +37,9 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
         media="screen">
+         <!-- api implementation -->
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 
     <style>
         .cardElevation {
@@ -115,15 +118,19 @@
     </div>
     <script>
         var x = "";
-        for (i = 1; i <= 6; i++) {
-            var examName = "JEE-Main(Joint enterance examination)";
-            var date = "September,2020 - December, 2022";
-            var detail = "variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by<br>injected humour, or randomised v<br>";
-            var experince = "10 years";
-            var address = "UIET,Sec-25, Chandigarh";
-            var contact = "1234567890";
-            var exam = "JEE";
-            var subject = "PCM"
+        var data;
+        axios.get('http://f351badf5ceb.ngrok.io/exams').then(response => {
+            console.log("api hit going on");
+            console.log(response.data);
+            data = response.data;
+       
+        for (i = 0; i < data.length; i++) {
+            var date = data[i]["Date"];
+            var detail = data[i]["Detail"];
+            var docsReq = data[i]["Documents_Required"];
+            var eligibiltyCreteria = data[i]["Eligibility_Criteria"];
+            var examName = data[i]["Exam_Name"];
+            var RegisterationFormLink = data[i]["Registeration_Form_Link"];
             x = x + '<div class="events_section_2 cardElevation">' +
                 '      <div class="row">' +
                 '          <div class="col-md-5">' +
@@ -135,8 +142,11 @@
                 '          </div>' +
                 '          <div class="col-md-7">' +
                 '              <h1 class="give_taital_1">' + examName + '</h1>' +
-                '              <p class="ipsum_text_1">' + detail + '</p>' +
                 '              <h5 class="raised_text_1">Registeration Date:<span class="goal_text">' + date + '</span></h5>' +
+                '              <p class="ipsum_text_1">' + detail + '</p>' +
+                '              <h5 ><b>Documents Required : </b> <span >' + docsReq + '</span></h5>' +
+                '              <h5 > <b>Eligibility Creteria : </b> <span >' + eligibiltyCreteria + '</span></h5>' +
+
                 '              <div class="donate_btn_main mr-auto">' +
                 '<button type="button" class="btn launch btn-lg" style = " background-color: #120a78; color: white;" data-toggle="modal" data-target="#staticBackdrop"> Read More</button>' +
                 '              </div>' +
@@ -145,57 +155,10 @@
                 '  </div><br><br>';
         }
         document.getElementById("exams").innerHTML = x;
+        
+    });
     </script>
     <!-- news section end -->
-
-    <!-- Modal section start-->
-    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-body ">
-                    <div class="text-right"> <i class="fa fa-close close" data-dismiss="modal"></i> </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="text-center mt-2"> <img src="images/img-7.png" height="500px">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="mt-5">
-                                <h1 class="mb-0">examName</h1>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <span class="intro-1">Date : </span>
-                                        </td>
-                                        <td><Strong class="intro-1">start:end</Strong></td><br>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="intro-1">Documents : </span> </td>
-                                        <td><Strong class="intro-1">Documents
-                                                needed</Strong></td> <br>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="intro-1">Eligibility : </span></td>
-                                        <td><Strong class="intro-1">eligibiltyCreteria</Strong></td><br>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-5 text-center">
-                        <div class="mt-4"> <span class="intro-2">Gain access to analytic tools, desktop apps,
-                                templates, read-through, features, and autp-translate all for the price of a pro
-                                subscriptionGain access to analytic tools,
-                                templates, read-through, features, and autp-tr</span> </div>
-                        <div class="mt-4 mb-5"> <button class="btn btn-primary">Register Here <i
-                                    class="fa fa-long-arrow-right"></i></button> </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- modal part ends -->
     <!-- footer section start -->
     <div class="footer_section layout_padding margin_top_90">
         <div class="container">
