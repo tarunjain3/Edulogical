@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.83.1">
-    <title>Resources Form</title>
+    <title>Exam Information Form</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
 
@@ -88,8 +88,9 @@
 <div class="container">
   <main class="my-4 ">
     <div class="py-5 mx-2 text-center">
-      <h2 class="heading">Resources Contribution Form</h2>
-      <p class="lead">Kindly share the resources that helped you ace the exam.</p>
+
+      <h2 class="heading">Exam Information Form</h2>
+      <p class="lead">Share the following details of the exam.</p>
     </div>
 
     <div class="row mx-2 g-5">
@@ -99,19 +100,27 @@
         </h4>
         <ul>
           <li>
-            <h5><a href="coachingForm.html">Coaching Institutes</a></h5>
+            <h5><a href="resourcesForm.html">Resources</a></h5>
           </li>
           <li>
-            <h5><a href="examForm.html">Exam information</a></h5>
+            <h5><a href="coachingForm.html">Coaching Institutes</a></h5>
           </li>
         </ul>
       </div>
 
       <div class="col-md-7 col-lg-8">
-        <h4 class="mb-3 heading2" >Resource Details</h4>
+        <h4 class="mb-3 heading2" >Exam Details</h4>
 
         <form class="needs-validation" novalidate>
           <div class="row g-3">
+            <div class="col-12">
+              <label for="name" class="form-label">Exam Name</label>
+              <input type="text" class="form-control" id="name" placeholder="" value="" required>
+              <div class="invalid-feedback">
+               Name is required.
+              </div>
+            </div>
+
             <div class="col-12">
               <label for="subject" class="form-label">Subject</label>
               <input type="text" class="form-control" id="subject" placeholder="Chemistry" required>
@@ -120,95 +129,54 @@
               </div>
             </div>
 
-            <div class="col-12">
-              <label for="name" class="form-label">Book Name</label>
-              <input type="text" class="form-control" id="name" placeholder="" value="" required>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Detail</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
               <div class="invalid-feedback">
-               Name is required.
+                Detail is required.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="date" class="form-label">Registration Date</label>
+              <input type="text" class="form-control" id="date" required>
+              <div class="invalid-feedback">
+                Registration date is required.
               </div>
             </div>
 
 
-            <div class="col-12">
-              <label for="authorName" class="form-label">Author Name</label>
-              <input type="text" class="form-control" id="authorName"  required>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Eligibilty Criteria</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" required></textarea>
               <div class="invalid-feedback">
-                Please enter Name.
+                Detail is required.
               </div>
             </div>
 
             <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Description</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-
-
-            <div class="col-12">
-              <label for="hardCopy" class="form-label">SoftCopy or HardCopy available ?</label>
-              <div class="col-12">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault"> HardCopy? <span class="text-muted">(Optional)</span> </label>
-                <div class="input-group ">
-                  <div class="input-group-text">
-                    <label for="text">Address- </label>
-                    <input class="form-check-input mt-0 checkbox" type="checkbox" value="" aria-label="Checkbox for following text input">
-                  </div>
-                  <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Enter address here">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-text">
-                    <label for="text">Link- </label>
-                    <input class="form-check-input mt-0 checkbox" type="checkbox" value="" aria-label="Checkbox for following text input">
-                  </div>
-                  <input type="url" class="form-control" aria-label="Text input with checkbox" placeholder="Enter link here">
-                </div>
-              </div>
-              <div class="col-12">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault"> Softcopy? <span class="text-muted">(Optional)</span> </label>
-                <div class="input-group ">
-                  <div class="input-group-text">
-                    <label for="text">File- </label>
-                    <input class="form-check-input mt-0 checkbox" type="checkbox" value="" aria-label="Checkbox for following text input">
-                  </div>
-                  <input type="file" class="form-control" aria-label="Text input with checkbox" placeholder="Enter address here">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-text">
-                    <label for="text">Link- </label>
-                    <input class="form-check-input mt-0 checkbox" type="checkbox" value="" aria-label="Checkbox for following text input">
-                  </div>
-                  <input type="url" class="form-control" aria-label="Text input with checkbox" placeholder="Enter link here">
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <label for="bookedition" class="form-label">Book Edition</label>
-              <input type="text" class="form-control" id="bookedition"  required>
+              <label for="exampleFormControlTextarea1" class="form-label">Documents Required</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" required></textarea>
               <div class="invalid-feedback">
-                Please enter Edition.
+                This field is compulsory.
               </div>
             </div>
+
 
             <div class="col-12">
-              <label for="bookImage" class="form-label">Book Image</label>
-              <input type="file" class="form-control" id="bookimage"  required>
+              <label for="link" class="form-label">Registration link </label>
+              <input type="url" class="form-control" id="link"  required>
               <div class="invalid-feedback">
-                Please enter Edition.
+                Please enter a valid link.
               </div>
             </div>
 
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Additional Links <span class="text-muted">(optional)</span></label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
 
 
 
           <hr class="my-4">
 
-          
+
 
           <button class="w-75 btn btn-primary btn-lg mb-4 mx-auto " type="submit">SUBMIT</button>
 
