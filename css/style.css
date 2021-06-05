@@ -502,10 +502,11 @@ button.donate_btn {
 /* about section start */
 
 .about_section {
-    width: 100%;
-    float: left;
+    margin: auto;
+    /* width: 80%; */
+    /* float: left; */
     background-color: #120a78;
-    padding-bottom: 90px;
+    margin: 48px 90px ;
 }
 
 .about_img {
@@ -1191,32 +1192,6 @@ input.address_text::placeholder {
 
 /* footer section end */
 
-
-/* copyright section start */
-
-.copyright_section {
-    width: 100%;
-    float: left;
-    background-color: #222122;
-    height: auto;
-}
-
-.copyright_text {
-    width: 100%;
-    float: left;
-    font-size: 16px;
-    margin-left: 0px;
-    color: #fff;
-    text-align: center;
-}
-
-.copyright_text a {
-    color: #ffffff;
-}
-
-.copyright_text a:hover {
-    color: #ff5333;
-}
 
 
 /* copyright section end */
