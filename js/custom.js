@@ -306,7 +306,7 @@ $(function () {
         }]
     });
 	
-	/* Resources Slider
+	/* News Slider
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 	
 	$('#news-slider').slick({
