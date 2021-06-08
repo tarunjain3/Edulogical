@@ -1067,7 +1067,7 @@ button.donate_btn {
 .footer_section {
     width: 100%;
     float: left;
-    background-color: rgba(228,239,231,0.7);
+    background-color: black;
     height: auto;
 }
 
@@ -1076,15 +1076,14 @@ button.donate_btn {
   margin-left: 100px;
 }
 
-.footer_row{
-  margin-bottom: 70px;
-}
+
+
 
 .footer_taital {
     width: 100%;
     float: left;
     font-size: 20px;
-    color: #3b14a7;
+    color: white;
     text-transform: uppercase;
     text-align: center;
 }
@@ -1093,7 +1092,7 @@ button.donate_btn {
     width: 100%;
     float: left;
     font-size: 17px;
-    color: black;
+    color: white;
     margin: 5px 0px;
     text-align: center;
 }
@@ -1146,11 +1145,11 @@ button.donate_btn {
 }
 
 .footer_menu li a {
-    color: black !important;
+    color: white !important;
 }
 
 .footer_menu li a:hover {
-    color: purple !important;
+    color:#e83e8c!important;
 }
 
 .footer_menu li.active::before,
@@ -1170,12 +1169,20 @@ button.donate_btn {
 }
 
 .footer_text a{
-  color: #3b14a7;
+  color: white;
 }
 
 
 .footer_text a:hover{
   color: #e83e8c;
+}
+
+.footer_end{
+  color: White;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 50px;
 }
 
 .address_text {

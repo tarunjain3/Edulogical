@@ -126,20 +126,26 @@ a:hover{
 .footer_section {
     width: 100%;
     float: left;
-    background-color: rgba(228,239,231,0.7);
+    /*background-color: rgba(228,239,231,0.7); */
     height: auto;
+    background-color: black;
+
+}
+
+.footer_logo img{
+  background-color: black;
 }
 
 .footer_row{
   margin-top: 70px;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 
 .footer_taital {
     width: 100%;
     float: left;
     font-size: 20px;
-    color: #3b14a7;
+    color: White;
     text-transform: uppercase;
     text-align: center;
 }
@@ -148,9 +154,17 @@ a:hover{
     width: 100%;
     float: left;
     font-size: 17px;
-    color: black;
+    color: white;
     margin: 5px 0px;
     text-align: center;
+}
+
+.footer_text a{
+  color:white;
+}
+
+.footer_text a:hover{
+  color: #e83e8c;
 }
 
 .footer_menu_main {
@@ -201,11 +215,11 @@ a:hover{
 }
 
 .footer_menu li a {
-    color: black;
+    color: white;
 }
 
 .footer_menu li a:hover {
-    color: purple;
+    color: pink;
 }
 
 .footer_menu li.active::before,
@@ -222,6 +236,14 @@ a:hover{
     left: -20px;
     top: 27%;
     border-radius: 100%;
+}
+
+.footer_end{
+  color: White;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 50px;
 }
 
 .address_text {
