@@ -33,6 +33,8 @@
    <link rel="stylesheet" href="css/owl.theme.default.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
       media="screen">
+   <!-- api implementation -->
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -40,7 +42,7 @@
    <div class="header_section">
 
    </div>
-   <nav class="navbar navbar-expand-lg navbar-light bg-light " >
+   <nav class="navbar navbar-expand-lg navbar-light bg-light ">
       <a class="navbar-brand"><a href="index.html"><img class"i" src="images/logo.png" width="300"></a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,17 +74,17 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
 
-              <div class = "btn-group">
-                <button type = "button" class = "btn btn-secondary dropdown-toggle" data-toggle = "dropdown">
-                  Contribute Now
-                  <span class = "caret"></span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li class="mx-1"><a href = "examForm.html">Exam information</a></li>
-                  <li class="mx-1"><a href = "resourcesForm.html">Resources</a></li>
-                  <li class="mx-1"><a href = "coachingForm.html">Coaching Institutes</a></li>
-                </ul>
-              </div>
+               <div class="btn-group">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                     Contribute Now
+                     <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                     <li class="mx-1"><a href="examForm.html">Exam information</a></li>
+                     <li class="mx-1"><a href="resourcesForm.html">Resources</a></li>
+                     <li class="mx-1"><a href="coachingForm.html">Coaching Institutes</a></li>
+                  </ul>
+               </div>
 
             </form>
          </div>
@@ -151,13 +153,13 @@
          </div>
       </div>
       <div class="donation_box">
-         <h4 class="donation_taital">Contact For Donation</h4>
+         <h1 class="text-center ">OUR PRIME FEATURES</h1>
          <div class="mail_box">
-            <input type="" class="mail_text" placeholder="Your Name" name="Your Name">
+            <!-- <input type="" class="mail_text" placeholder="Your Name" name="Your Name">
             <input type="" class="mail_text" placeholder="Email" name="Email">
-            <input type="" class="mail_text" placeholder="Phone" name="Phone">
+            <input type="" class="mail_text" placeholder="Phone" name="Phone"> -->
          </div>
-         <div class="send_bt"><a href="#">Send</a></div>
+         <!-- <div class="send_bt"><a href="#">Send</a></div> -->
       </div>
       <div class="fundraise_section">
          <div class="fundraise_section_main">
@@ -165,39 +167,42 @@
                <div class="col-lg-4">
                   <div class="box_main">
                      <div class="icon_1"><img src="images/icon-1.png"></div>
-                     <h4 class="volunteer_text">VOLUNTEERS</h4>
+                     <h4 class="volunteer_text">EXAM INFO</h4>
                      <p class="lorem_text">Lorem Ipsum generators on the Internet tend to repeat predefined</p>
-                     <div class="join_bt"><a href="#">Join Now</a></div>
+                     <div class="join_bt"><a href="exams.html">Know more</a></div>
                   </div>
                </div>
                <div class="col-lg-4">
                   <div class="box_main active">
                      <div class="icon_1"><img src="images/icon-2.png"></div>
-                     <h4 class="volunteer_text">FUNDRAISE</h4>
+                     <h4 class="volunteer_text">Resources</h4>
                      <p class="lorem_text">Lorem Ipsum generators on the Internet tend to repeat predefined</p>
-                     <div class="join_bt"><a href="#">Join Now</a></div>
+                     <div class="join_bt"><a href="resources.html">Get resources</a></div>
                   </div>
                </div>
                <div class="col-lg-4">
                   <div class="box_main">
                      <div class="icon_1"><img src="images/icon-3.png"></div>
-                     <h4 class="volunteer_text">DONATION</h4>
+                     <h4 class="volunteer_text">Coaching</h4>
                      <p class="lorem_text">Lorem Ipsum generators on the Internet tend to repeat predefined</p>
-                     <div class="join_bt"><a href="#">Join Now</a></div>
+                     <div class="join_bt"><a href="coaching.html">Join Now</a></div>
                   </div>
                </div>
             </div>
          </div>
       </div>
    </div>
+
    </div>
+
    <!-- banner section end -->
    <!-- about section start -->
+
    <div class="about_section layout_padding">
       <div class="container">
          <div class="row">
             <div class="col-sm-8">
-               <h2 class="about_taital">Coaching Edulogical</h2>
+               <h2 class="about_taital">About us</h2>
                <p class="about_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deserunt ut impedit
                   atque. Quae distinctio sunt iure ut sapiente corrupti, amet maxime magni doloribus culpa omnis
                   dolores. Eaque, corrupti provident. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -211,228 +216,131 @@
          </div>
       </div>
    </div>
-   <!-- about section end -->
-   <!-- mission section start -->
-   <!-- <div class="mission_section layout_padding">
-      <div class="container">
-         <div class="row">
-            <div class="col-sm-12">
-               <h1 class="mission_taital">Mission causes</h1>
-               <p class="mission_text">going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
-                  embarrassing hidden in the middle of text. </p>
-            </div>
-         </div>
-      </div>
-      <div class="mission_section_2">
-         <div class="row">
-            <div class="offset-md-2"></div>
-            <div class="col-md-5">
-               <div class="container_main">
-                  <img src="images/img-1.png" alt="Avatar" class="image">
-                  <div class="overlay">
-                     <div class="text">
-                        <h4 class="some_text">whichalteration in some </h4>
-                        <p class="alteration_text">Alteration in some form, by injected humour, or randomised words
-                           whichalteration in some form, by injected humour, or randomised words which</p>
-                        <div class="btn_main">
-                           <div class="donate_bt"><a href="#">Read More</a></div>
-                           <div class="donate_bt"><a href="donate.html">Contribute Now</a></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-5">
-               <div class="container_main">
-                  <img src="images/img-2.png" alt="Avatar" class="image">
-                  <div class="overlay">
-                     <div class="text">
-                        <h4 class="some_text">whichalteration in some </h4>
-                        <p class="alteration_text">Alteration in some form, by injected humour, or randomised words
-                           whichalteration in some form, by injected humour, or randomised words which</p>
-                        <div class="btn_main">
-                           <div class="donate_bt"><a href="#">Read More</a></div>
-                           <div class="donate_bt"><a href="donate.html">Contribute Now</a></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="mission_section_2">
-         <div class="row">
-            <div class="col-md-5">
-               <div class="container_main">
-                  <img src="images/img-3.png" alt="Avatar" class="image">
-                  <div class="overlay">
-                     <div class="text">
-                        <h4 class="some_text">whichalteration in some </h4>
-                        <p class="alteration_text">Alteration in some form, by injected humour, or randomised words
-                           whichalteration in some form, by injected humour, or randomised words which</p>
-                        <div class="btn_main">
-                           <div class="donate_bt"><a href="#">Read More</a></div>
-                           <div class="donate_bt"><a href="donate.html">Contribute Now</a></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-5">
-               <div class="container_main">
-                  <img src="images/img-4.png" alt="Avatar" class="image">
-                  <div class="overlay">
-                     <div class="text">
-                        <h4 class="some_text">whichalteration in some </h4>
-                        <p class="alteration_text">Alteration in some form, by injected humour, or randomised words
-                           whichalteration in some form, by injected humour, or randomised words which</p>
-                        <div class="btn_main">
-                           <div class="donate_bt"><a href="#">Read More</a></div>
-                           <div class="donate_bt"><a href="donate.html">Contribute Now</a></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="offset-md-2"></div>
-         </div>
-      </div>
-      <div class="mission_section_2">
-         <div class="row">
-            <div class="offset-md-2"></div>
-            <div class="col-md-5">
-               <div class="container_main">
-                  <img src="images/img-5.png" alt="Avatar" class="image">
-                  <div class="overlay">
-                     <div class="text">
-                        <h4 class="some_text">whichalteration in some </h4>
-                        <p class="alteration_text">Alteration in some form, by injected humour, or randomised words
-                           whichalteration in some form, by injected humour, or randomised words which</p>
-                        <div class="btn_main">
-                           <div class="donate_bt"><a href="#">Read More</a></div>
-                           <div class="donate_bt"><a href="donate.html">Contribute Now</a></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-5">
-               <div class="container_main">
-                  <img src="images/img-6.png" alt="Avatar" class="image">
-                  <div class="overlay">
-                     <div class="text">
-                        <h4 class="some_text">whichalteration in some </h4>
-                        <p class="alteration_text">Alteration in some form, by injected humour, or randomised words
-                           whichalteration in some form, by injected humour, or randomised words which</p>
-                        <div class="btn_main">
-                           <div class="donate_bt"><a href="#">Read More</a></div>
-                           <div class="donate_bt"><a href="donate.html">Contribute Now</a></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div> -->
-   <!-- mission section end -->
-   <!-- news section start -->
+
    <div class="news_section layout_padding">
       <div class="container">
          <div class="row">
             <div class="col-sm-12">
-               <h1 class="news_taital">FEATURED CAUSE</h1>
+               <h1 class="news_taital">POPULAR EXAMS</h1>
                <p class="news_text">going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
                   embarrassing hidden in the middle of text. </p>
             </div>
          </div>
-         <div class="news_section_2">
-            <div class="row">
-               <div class="col-md-6">
-                  <div class="news_img"><img src="images/news-img.png"></div>
-               </div>
-               <div class="col-md-6">
-                  <h1 class="give_taital">GIVE EDUCATION</h1>
-                  <p class="ipsum_text">variations of passages of Lorem Ipsum available, but the majority have suffered
-                     alteration in some form, by injected humour, or randomised variations of passages of Lorem Ipsum
-                     available, but the majority have suffered alteration in some form, by<br>
-                     injected humour, or randomised v<br>
-                     ariations of passages of Lorem Ipsum <br>
-                     available, but the majority have suffered alteration in some form, by injected humour, or
-                     randomised
-                  </p>
-                  <h5 class="raised_text">Raised: $60,010 <span class="goal_text">Goal: $70,000</span></h5>
-                  <div class="donate_btn_main">
-                     <div class="readmore_btn"><a href="#">Read More</a></div>
-                     <div class="readmore_btn_1"><a href="donate.html">Contribute Now</a></div>
-                  </div>
-               </div>
-            </div>
+         <br><br>
+         <div id="exams">
          </div>
       </div>
    </div>
+   <script>
+      var x = "";
+      var dataExam;
+      axios.get('https://dd3f117463d1.ngrok.io/exams').then(response => {
+         console.log("api hit going on");
+         console.log(response.data);
+         dataExam = response.data;
+         var length = 2;
+         if (dataExam.length <=2) length = dataExam.length;
+         for (i = 0; i < length; i++) {
+            var date = dataExam[i]["Date"];
+            var detail = dataExam[i]["Detail"];
+            var docsReq = dataExam[i]["Documents_Required"];
+            var eligibiltyCreteria = dataExam[i]["Eligibility_Criteria"];
+            var examName = dataExam[i]["Exam_Name"];
+            var RegisterationFormLink = dataExam[i]["Registeration_Form_Link"];
+            var imgUrl = dataExam[i]["Image_url"];
+            var RegisterationFormLink = dataExam[i]["Registeration_Form_Link"];
+            x = x + '<div class="events_section_2 cardElevation">' +
+               '      <div class="row">' +
+               '          <div class="col-md-5">' +
+               '              <div class="img_7"><img src= ' + imgUrl + ' class="img_7"></div>' +
+               '              <div class="date_bt">' +
+               '                  <div class="date_text active"><a href="#">01</a></div>' +
+               '                  <div class="date_text"><a href="#">FEB</a></div>' +
+               '              </div>' +
+               '          </div>' +
+               '          <div class="col-md-7">' +
+               '              <h1 class="give_taital_1">' + examName + '</h1>' +
+               '              <h5 class="raised_text_1">Registeration Date:<span class="goal_text">' + date + '</span></h5>' +
+               '              <p class="ipsum_text_1">' + detail + '</p>' +
+               '              <h5 ><b>Documents Required : </b> <span >' + docsReq + '</span></h5>' +
+               '              <h5 > <b>Eligibility Creteria : </b> <span >' + eligibiltyCreteria + '</span></h5>' +
+               '              <div class="donate_btn_main mr-auto">' +
+               '              <a href= ' + RegisterationFormLink + '><button type="button" class="btn launch btn-lg" style = " background-color: #120a78; color: white;">Read More</button></a>' +
+               '              </div>' +
+               '          </div>' +
+               '      </div>' +
+               '  </div><br><br>';
+         }
+         document.getElementById("exams").innerHTML = x;
+      });
+   </script>
    <!-- news section end -->
    <!-- events section start -->
    <div class="events_section layout_padding">
       <div class="container">
          <div class="row">
             <div class="col-sm-12">
-               <h1 class="news_taital">FEATURED CAUSE</h1>
+               <h1 class="news_taital">TRENDING RESOURCES</h1>
                <p class="news_text">going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
                   embarrassing hidden in the middle of text. </p>
             </div>
          </div>
-         <div class="events_section_2">
-            <div class="row">
-               <div class="col-md-5">
-                  <div class="img_7"><img src="images/img-7.png" class="img_7"></div>
-                  <div class="date_bt">
-                     <div class="date_text active"><a href="#">01</a></div>
-                     <div class="date_text"><a href="#">FEB</a></div>
-                  </div>
-               </div>
-               <div class="col-md-7">
-                  <h1 class="give_taital_1">The Internet tend to repeat</h1>
-                  <p class="ipsum_text_1">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-                     roots in a piece of classical Latin literatureContrary to popular belief, Lorem Ipsum is not simply
-                     random text. It has roots in a piece of classical Latin literature</p>
-                  <h5 class="raised_text_1">Raised: $60,010 <span class="goal_text">Goal: $70,000</span></h5>
-                  <div class="donate_btn_main">
-                     <div class="readmore_btn"><a href="#">Read More</a></div>
-                     <div class="readmore_btn_1"><a href="donate.html">Contribute Now</a></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="events_section_2">
-            <div class="row">
-               <div class="col-md-5">
-                  <div class="img_7"><img src="images/img-8.png" class="img_7"></div>
-                  <div class="date_bt">
-                     <div class="date_text active"><a href="#">10</a></div>
-                     <div class="date_text"><a href="#">FEB</a></div>
-                  </div>
-               </div>
-               <div class="col-md-7">
-                  <h1 class="give_taital_1">The Internet tend to repeat</h1>
-                  <p class="ipsum_text_1">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-                     roots in a piece of classical Latin literatureContrary to popular belief, Lorem Ipsum is not simply
-                     random text. It has roots in a piece of classical Latin literature</p>
-                  <h5 class="raised_text_1">Raised: $60,010 <span class="goal_text">Goal: $70,000</span></h5>
-                  <div class="donate_btn_main">
-                     <div class="readmore_btn"><a href="#">Read More</a></div>
-                     <div class="readmore_btn_1"><a href="donate.html">Contribute Now</a></div>
-                  </div>
-               </div>
-            </div>
+         <div id="reosources">
          </div>
       </div>
    </div>
+   <script>
+      console.log("ready for api hit");
+      console.log("ready for api ended");
+      var y = "";
+      axios.get('https://dd3f117463d1.ngrok.io/resources').then(response => {
+            console.log("api hit going on");
+            console.log(response.data);
+            data = response.data;
+         
+     var length = 2;
+         if (data.length <=2) length = data.length;
+         for (i = 0; i < length; i++) {
+         var bookName = data[i]["Book_Name"];
+         var authorName = data[i]["Author_Name"];
+         var description = data[i]["Description"];
+         var bookImage = data[i]["Book_Image"];
+         var bookEdition = data[i]["Book_Edition"];
+         var Softcopy_OR_Hardcopy = data[i]["Softcopy_OR_Hardcopy"];
+         var Subject = data[i]["Subject"];
+         var resourceUrl = data[i]["Resource_url"];
+       
+         y = y + ' <div class="news_section layout_padding">' +
+            '   <div class="container">' +
+            '      <div class="news_section_2 cardElevation">' +
+            '         <div class="row">' +
+            '            <div class="col-md-5">' +
+            '               <div class="news_img"><img src="' + bookImage+ '"></div>' +
+            '            </div>' +
+            '              <div class="col-md-1"></div>' +
+            '            <div class="col-md-6">' +
+            '               <h1 class="give_taital">' + bookName + '</h1>' +
+            '                <h1> By ' + authorName + '</h1>' +
+            '                <h3> Subject :  ' + Subject + '</h3>' +
+            '               <p class="ipsum_text"> ' + description + ' </p>' +
+            '                <h3> Book edition : <b>' + bookEdition + '</b></h3>' +
+            '               <div class="donate_btn_main">' +
+            '<button type="button" class=" readmore_btn_1 "><a href='+ resourceUrl+'">Read More</a></div></button><br><br>' +
+            '               </div>' +
+            '            </div>' +
+            '         </div>' +
+            '      </div>' +
+            '   </div>' +
+            '</div>';
+      }
+      document.getElementById("reosources").innerHTML = y;
+   });
+   </script>
    <!-- events section end -->
    <!-- donate section start -->
    <div class="donate_section layout_padding">
       <div class="container">
-         <h1 class="donate_taital">Donat pepole Says </h1>
+         <h1 class="donate_taital">ANNOUNCEMENTS</h1>
          <div class="donate_taital_main">
             <div id="main_slider" class="carousel slide" data-ride="carousel">
                <div class="carousel-inner">
@@ -490,7 +398,7 @@
    <!-- footer section start -->
    <div class="footer_section layout_padding">
       <div class="container-md ">
-         <div class="row footer_row gx-5" >
+         <div class="row footer_row gx-5">
             <div class="col-sm-6 col-md-6 col-lg-3 mt-4">
                <div class="footer_logo"><img src="images/logoFooter1.png " width="300"></div>
             </div>
@@ -518,27 +426,32 @@
                </div>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-3">
-              <h4 class="footer_taital">Feel Motivated</h4>
-              <p class="footer_text">Success is no Accident.</p>
-              <p class="footer_text">It is hard work.</p>
-              <p class="footer_text">If it's hard it's probably</p>
-              <p class="footer_text">worth it.</p>
+               <h4 class="footer_taital">Feel Motivated</h4>
+               <p class="footer_text">Success is no Accident.</p>
+               <p class="footer_text">It is hard work.</p>
+               <p class="footer_text">If it's hard it's probably</p>
+               <p class="footer_text">worth it.</p>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-3">
                <h4 class="footer_taital">Contact Us</h4>
-               <p class="footer_text">Shubham Ratra -- <a href="https://www.linkedin.com/in/shubhamrattra/">linkedin</a> </p>
-               <p class="footer_text">Srishti Bajoria -- <a href="https://www.linkedin.com/in/srishti-bajoria-79a1231b6/">linkedin</a> <a href="https://www.instagram.com/srishtibajoria1/">Instagram</a> </p>
-               <p class="footer_text">Tanya Aggarwal -- <a href="https://www.linkedin.com/in/tanya-aggarwal13/"> linkedin</a> </p>
+               <p class="footer_text">Shubham Ratra -- <a href="https://www.linkedin.com/in/shubhamrattra/">linkedin</a>
+               </p>
+               <p class="footer_text">Srishti Bajoria -- <a
+                     href="https://www.linkedin.com/in/srishti-bajoria-79a1231b6/">linkedin</a> <a
+                     href="https://www.instagram.com/srishtibajoria1/">Instagram</a> </p>
+               <p class="footer_text">Tanya Aggarwal -- <a href="https://www.linkedin.com/in/tanya-aggarwal13/">
+                     linkedin</a> </p>
                <p class="footer_text">Tarun Jain -- <a href="https://www.linkedin.com/in/tarun38/">linkedin</a> </p>
-               <p class="footer_text">Vinayak Vats -- <a href="https://www.linkedin.com/in/vinayak-vats-7b5222203/">linkedin</a> </p>
+               <p class="footer_text">Vinayak Vats -- <a
+                     href="https://www.linkedin.com/in/vinayak-vats-7b5222203/">linkedin</a> </p>
 
             </div>
          </div>
       </div>
       <div class="footer_end">
-        <div class="container">
-          <p>NEVER SO TOMORROW WHAT YOU CAN DO TODAY.</p>
-        </div>
+         <div class="container">
+            <p>NEVER SO TOMORROW WHAT YOU CAN DO TODAY.</p>
+         </div>
       </div>
    </div>
    <!-- footer section end -->
