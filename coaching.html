@@ -123,7 +123,7 @@
         var email = "abc@gmail.com";
         var x = "";
         var data;
-        axios.get('http://f351badf5ceb.ngrok.io/coaching').then(response => {
+        axios.get('https://dd3f117463d1.ngrok.io/coaching').then(response => {
             console.log("api hit going on");
             console.log(response.data);
             data = response.data;
@@ -136,11 +136,12 @@
                 // description = datat[i]["Description"];
                 address = data[i]["Address"];
                 experince = data[i]["Teaching_experience"];
-                contact = data[i]["Contact_Number"];
+                contact = data[i]["Contact"];
                 exam = data[i]["Exam"];
                 subject = data[i]["Subject"];
                 email = data[i]["Email"];
-
+                var imgUrl = data[i]["Image_url"];
+                var website = data[i]["Website"];
 
                 x = x + ' <div class="about_section layout_padding">' +
                     '   <div class="container">' +
@@ -154,10 +155,10 @@
                     '   <h2 style="color:white;"> Contact number : ' + contact + ' </h2>' +
                     '   <h2 style="color:white;"> Email address : ' + email + ' </h2>' +
                     '   <h1 style="color:white;"><Strong> Address : ' + address + '</Strong> </h1> <br>' +
-                    ' <div class="readmore_btn_1" style="text-align: center;"><a href="#">Know More</a></div> <br><br>' +
+                    ' <div class="readmore_btn_1" style="text-align: center;"><a href='+ website+'>Know More</a></div> <br><br>' +
                     '         </div>' +
                     '         <div class="col-sm-4">' +
-                    '            <div class="agbout_img"><img src="images/about-img.png"></div>' +
+                    '            <div class="agbout_img"><img src=' + imgUrl + '></div>' +
                     '         </div>' +
                     '      </div>' +
                     '   </div>' +
