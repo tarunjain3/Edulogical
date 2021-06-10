@@ -508,8 +508,8 @@ button.donate_btn {
 /* about section start */
 
 .about_section {
-    /* width: 100%; */
-    /* float: left; */
+    width: 100%;
+    float: left;
     background-color: #120a78;
     padding-bottom: 90px;
 }

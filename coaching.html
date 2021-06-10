@@ -57,54 +57,60 @@
 <body>
     <!-- header section start -->
     <div class="header_section">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-            <a class="navbar-brand"><a href="index.html"><img class"i" src="images/logo.png" width="300"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="exams.html">Exams</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="coaching.html">Coaching</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="donate.html">Contribute</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="resources.html">Resources</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="mission.html">Our Mission</a>
-                        </li>
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light " >
+         <a class="navbar-brand"><a href="index.html"><img class"i" src="images/logo.png" width="300"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="exams.html">Exams</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="coaching.html">Coaching</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="resources.html">Resources</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Contribute Now
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="examForm.html">Exam information</a>
+                      <a class="dropdown-item" href="resourcesForm.html">Resources</a>
+                      <a class="dropdown-item" href="coachingForm.html">Coaching Institutes</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="mission.html">Our Mission</a>
+                  </li>
+               </ul>
+               <form class="form-inline my-2 my-lg-0">
 
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
-                                Contribute Now
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li class="mx-1"><a href="examForm.html">Exam information</a></li>
-                                <li class="mx-1"><a href="resourcesForm.html">Resources</a></li>
-                                <li class="mx-1"><a href="coachingForm.html">Coaching Institutes</a></li>
-                            </ul>
-                        </div>
+                 <div class = "btn-group">
+                   <button type = "button" class = "btn btn-secondary dropdown-toggle" data-toggle = "dropdown">
+                     Contribute Now
+                     <span class = "caret"></span>
+                   </button>
+                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                     <li class="mx-1"><a href = "examForm.html">Exam information</a></li>
+                     <li class="mx-1"><a href = "resourcesForm.html">Resources</a></li>
+                     <li class="mx-1"><a href = "coachingForm.html">Coaching Institutes</a></li>
+                   </ul>
+                 </div>
 
-                    </form>
-                </div>
-        </nav>
+               </form>
+            </div>
+      </nav>
     </div>
     <!-- header section end -->
     <!-- news section start -->
@@ -121,7 +127,7 @@
             </div>
         </div>
     </div>
-    <div id="reosources"></div><br><br><br><br><br>
+    <div id="reosources"></div>
     <script>
         var coachingName = "Coaching Centre Name";
         var facultyName = "Faculty Name";
@@ -134,7 +140,7 @@
         var email = "abc@gmail.com";
         var x = "";
         var data;
-        axios.get('https://dd3f117463d1.ngrok.io/coaching').then(response => {
+        axios.get('http://f351badf5ceb.ngrok.io/coaching').then(response => {
             console.log("api hit going on");
             console.log(response.data);
             data = response.data;
@@ -147,16 +153,15 @@
                 // description = datat[i]["Description"];
                 address = data[i]["Address"];
                 experince = data[i]["Teaching_experience"];
-                contact = data[i]["Contact"];
+                contact = data[i]["Contact_Number"];
                 exam = data[i]["Exam"];
                 subject = data[i]["Subject"];
                 email = data[i]["Email"];
-                var imgUrl = data[i]["Image_url"];
-                var website = data[i]["Website"];
 
-                x = x + ' <div class=" ">' +
-                    '   <div class="container layout_padding">' +
-                    '      <div class="row about_section">' +
+
+                x = x + ' <div class="about_section layout_padding">' +
+                    '   <div class="container">' +
+                    '      <div class="row">' +
                     '         <div class="col-sm-8">' +
                     '            <h2 class="about_taital">' + (i + 1) + ')  ' + coachingName + '</h2>' +
                     '   <h1 style="color:white;"> Faculty : ' + facultyName + ' </h1>' +
@@ -166,10 +171,10 @@
                     '   <h2 style="color:white;"> Contact number : ' + contact + ' </h2>' +
                     '   <h2 style="color:white;"> Email address : ' + email + ' </h2>' +
                     '   <h1 style="color:white;"><Strong> Address : ' + address + '</Strong> </h1> <br>' +
-                    ' <div class="readmore_btn_1" style="text-align: center;"><a href=' + website + '>Know More</a></div> <br><br>' +
+                    ' <div class="readmore_btn_1" style="text-align: center;"><a href="#">Know More</a></div> <br><br>' +
                     '         </div>' +
                     '         <div class="col-sm-4">' +
-                    '            <div class="agbout_img layout_padding"><img src=' + imgUrl + '></div>' +
+                    '            <div class="agbout_img"><img src="images/about-img.png"></div>' +
                     '         </div>' +
                     '      </div>' +
                     '   </div>' +
@@ -182,62 +187,56 @@
     <!-- news section end -->
     <!-- footer section start -->
     <div class="footer_section layout_padding">
-        <div class="container-md ">
-            <div class="row footer_row gx-5">
-                <div class="col-sm-6 col-md-6 col-lg-3 mt-4">
-                    <div class="footer_logo"><img src="images/logoFooter1.png " width="300"></div>
+       <div class="container-md ">
+          <div class="row footer_row gx-5" >
+             <div class="col-sm-6 col-md-6 col-lg-3 mt-4">
+                <div class="footer_logo"><img src="images/logoFooter1.png " width="300"></div>
+             </div>
+             <div class="col-sm-6 col-md-6 col-lg-3 ">
+                <h4 class="footer_taital">NAVIGATION</h4>
+                <div class="footer_menu_main">
+                   <div class="footer_menu_left">
+                      <div class="footer_menu">
+                         <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="exams.html">Exams</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                         </ul>
+                      </div>
+                   </div>
+                   <div class="footer_menu_right">
+                      <div class="footer_menu">
+                         <ul>
+                            <li><a href="coaching.html">Coaching</a></li>
+                            <li><a href="resources.html">Resources</a></li>
+                            <li><a href="mission.html">Our Mission</a></li>
+                         </ul>
+                      </div>
+                   </div>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-3 ">
-                    <h4 class="footer_taital">NAVIGATION</h4>
-                    <div class="footer_menu_main">
-                        <div class="footer_menu_left">
-                            <div class="footer_menu">
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="exams.html">Exams</a></li>
-                                    <li><a href="contact.html">Contact us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="footer_menu_right">
-                            <div class="footer_menu">
-                                <ul>
-                                    <li><a href="coaching.html">Coaching</a></li>
-                                    <li><a href="resources.html">Resources</a></li>
-                                    <li><a href="mission.html">Our Mission</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-3">
-                    <h4 class="footer_taital">Feel Motivated</h4>
-                    <p class="footer_text">Success is no Accident.</p>
-                    <p class="footer_text">It is hard work.</p>
-                    <p class="footer_text">If it's hard it's probably</p>
-                    <p class="footer_text">worth it.</p>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-3">
-                    <h4 class="footer_taital">Contact Us</h4>
-                    <p class="footer_text">Shubham Ratra -- <a
-                            href="https://www.linkedin.com/in/shubhamrattra/">linkedin</a> </p>
-                    <p class="footer_text">Srishti Bajoria -- <a
-                            href="https://www.linkedin.com/in/srishti-bajoria-79a1231b6/">linkedin</a> <a
-                            href="https://www.instagram.com/srishtibajoria1/">Instagram</a> </p>
-                    <p class="footer_text">Tanya Aggarwal -- <a href="https://www.linkedin.com/in/tanya-aggarwal13/">
-                            linkedin</a> </p>
-                    <p class="footer_text">Tarun Jain -- <a href="https://www.linkedin.com/in/tarun38/">linkedin</a>
-                    </p>
-                    <p class="footer_text">Vinayak Vats -- <a
-                            href="https://www.linkedin.com/in/vinayak-vats-7b5222203/">linkedin</a> </p>
+             </div>
+             <div class="col-sm-6 col-md-6 col-lg-3">
+               <h4 class="footer_taital">Feel Motivated</h4>
+               <p class="footer_text">Success is no Accident.</p>
+               <p class="footer_text">It is hard work.</p>
+               <p class="footer_text">If it's hard it's probably</p>
+               <p class="footer_text">worth it.</p>
+             </div>
+             <div class="col-sm-6 col-md-6 col-lg-3">
+                <h4 class="footer_taital">Contact Us</h4>
+                <p class="footer_text">Shubham Ratra -- <a href="https://www.linkedin.com/in/shubhamrattra/">linkedin</a> </p>
+                <p class="footer_text">Srishti Bajoria -- <a href="https://www.linkedin.com/in/srishti-bajoria-79a1231b6/">linkedin</a> <a href="https://www.instagram.com/srishtibajoria1/">Instagram</a> </p>
+                <p class="footer_text">Tanya Aggarwal -- <a href="https://www.linkedin.com/in/tanya-aggarwal13/"> linkedin</a> </p>
+                <p class="footer_text">Tarun Jain -- <a href="https://www.linkedin.com/in/tarun38/">linkedin</a> </p>
+                <p class="footer_text">Vinayak Vats -- <a href="https://www.linkedin.com/in/vinayak-vats-7b5222203/">linkedin</a> </p>
 
-                </div>
-            </div>
+             </div>
+          </div>
         </div>
         <div class="footer_end">
-            <div class="container">
-                <p>NEVER SO TOMORROW WHAT YOU CAN DO TODAY.</p>
-            </div>
+          <div class="container">
+            <p>NEVER SO TOMORROW WHAT YOU CAN DO TODAY.</p>
+          </div>
         </div>
 
     </div>

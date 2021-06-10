@@ -78,10 +78,17 @@
                      <a class="nav-link" href="coaching.html">Coaching</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="donate.html">Contribute</a>
-                  </li>
-                  <li class="nav-item">
                      <a class="nav-link" href="resources.html">Resources</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Contribute Now
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="examForm.html">Exam information</a>
+                      <a class="dropdown-item" href="resourcesForm.html">Resources</a>
+                      <a class="dropdown-item" href="coachingForm.html">Coaching Institutes</a>
+                    </div>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="contact.html">Contact Us</a>
@@ -129,11 +136,11 @@
     <script>
         var x = "";
         var data;
-        axios.get('https://dd3f117463d1.ngrok.io/exams').then(response => {
+        axios.get('http://f351badf5ceb.ngrok.io/exams').then(response => {
             console.log("api hit going on");
             console.log(response.data);
             data = response.data;
-       
+
         for (i = 0; i < data.length; i++) {
             var date = data[i]["Date"];
             var detail = data[i]["Detail"];
@@ -141,12 +148,10 @@
             var eligibiltyCreteria = data[i]["Eligibility_Criteria"];
             var examName = data[i]["Exam_Name"];
             var RegisterationFormLink = data[i]["Registeration_Form_Link"];
-            var imgUrl = data[i]["Image_url"];
-            var RegisterationFormLink = data[i]["Registeration_Form_Link"];
             x = x + '<div class="events_section_2 cardElevation">' +
                 '      <div class="row">' +
                 '          <div class="col-md-5">' +
-                '              <div class="img_7"><img src= ' + imgUrl + ' class="img_7"></div>' +
+                '              <div class="img_7"><img src="images/img-7.png" class="img_7"></div>' +
                 '              <div class="date_bt">' +
                 '                  <div class="date_text active"><a href="#">01</a></div>' +
                 '                  <div class="date_text"><a href="#">FEB</a></div>' +
@@ -160,14 +165,14 @@
                 '              <h5 > <b>Eligibility Creteria : </b> <span >' + eligibiltyCreteria + '</span></h5>' +
 
                 '              <div class="donate_btn_main mr-auto">' +
-                '<a href= '+ RegisterationFormLink+'><button type="button" class="btn launch btn-lg" style = " background-color: #120a78; color: white;">  Read More</button></a>' +
+                '<button type="button" class="btn launch btn-lg" style = " background-color: #120a78; color: white;" data-toggle="modal" data-target="#staticBackdrop"> Read More</button>' +
                 '              </div>' +
                 '          </div>' +
                 '      </div>' +
                 '  </div><br><br>';
         }
         document.getElementById("exams").innerHTML = x;
-        
+
     });
     </script>
     <!-- news section end -->
