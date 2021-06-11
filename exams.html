@@ -39,22 +39,6 @@
         media="screen">
          <!-- api implementation -->
    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
-
-    <style>
-        .cardElevation {
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-            transition: 0.3s;
-            padding: 16px;
-            margin: 2%;
-            background-color: rgba(0, 0, 0, 0.05);
-        }
-
-        .cardElevation:hover {
-            box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.5);
-            border: 2px solid red;
-        }
-    </style>
 </head>
 
 <body>
@@ -136,11 +120,11 @@
     <script>
         var x = "";
         var data;
-        axios.get('http://f351badf5ceb.ngrok.io/exams').then(response => {
+        axios.get('https://dd3f117463d1.ngrok.io/exams').then(response => {
             console.log("api hit going on");
             console.log(response.data);
             data = response.data;
-
+       
         for (i = 0; i < data.length; i++) {
             var date = data[i]["Date"];
             var detail = data[i]["Detail"];
@@ -148,10 +132,12 @@
             var eligibiltyCreteria = data[i]["Eligibility_Criteria"];
             var examName = data[i]["Exam_Name"];
             var RegisterationFormLink = data[i]["Registeration_Form_Link"];
+            var imgUrl = data[i]["Image_url"];
+            var RegisterationFormLink = data[i]["Registeration_Form_Link"];
             x = x + '<div class="events_section_2 cardElevation">' +
                 '      <div class="row">' +
                 '          <div class="col-md-5">' +
-                '              <div class="img_7"><img src="images/img-7.png" class="img_7"></div>' +
+                '              <div class="img_7"><img src= ' + imgUrl + ' class="img_7"></div>' +
                 '              <div class="date_bt">' +
                 '                  <div class="date_text active"><a href="#">01</a></div>' +
                 '                  <div class="date_text"><a href="#">FEB</a></div>' +
@@ -165,14 +151,14 @@
                 '              <h5 > <b>Eligibility Creteria : </b> <span >' + eligibiltyCreteria + '</span></h5>' +
 
                 '              <div class="donate_btn_main mr-auto">' +
-                '<button type="button" class="btn launch btn-lg" style = " background-color: #120a78; color: white;" data-toggle="modal" data-target="#staticBackdrop"> Read More</button>' +
+                '<a href= '+ RegisterationFormLink+'><button type="button" class="btn launch btn-lg" style = " background-color: #120a78; color: white;">  Read More</button></a>' +
                 '              </div>' +
                 '          </div>' +
                 '      </div>' +
                 '  </div><br><br>';
         }
         document.getElementById("exams").innerHTML = x;
-
+        
     });
     </script>
     <!-- news section end -->
