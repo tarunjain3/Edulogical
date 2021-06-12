@@ -131,7 +131,7 @@
     <script>
         var coachingName = "Coaching Centre Name";
         var facultyName = "Faculty Name";
-        var description = "variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by<br>injected humour, or randomised v<br>";
+        var mission = "variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by<br>injected humour, or randomised v<br>";
         var experince = "10";
         var address = "UIET,Sec-25, Chandigarh";
         var contact = "1234567890";
@@ -140,7 +140,7 @@
         var email = "abc@gmail.com";
         var x = "";
         var data;
-        axios.get('http://f351badf5ceb.ngrok.io/coaching').then(response => {
+        axios.get('https://0b83b3fa5376.ngrok.io/coaching').then(response => {
             console.log("api hit going on");
             console.log(response.data);
             data = response.data;
@@ -150,7 +150,7 @@
             for (i = 0; i < data.length; i++) {
                 coachingName = data[i]["Coaching_Name"];
                 facultyName = data[i]["Faculty_Name"];
-                // description = datat[i]["Description"];
+                mission = data[i]["Mission"];
                 address = data[i]["Address"];
                 experince = data[i]["Teaching_experience"];
                 contact = data[i]["Contact_Number"];
@@ -159,14 +159,14 @@
                 email = data[i]["Email"];
 
 
-                x = x + ' <div class="about_section layout_padding">' +
-                    '   <div class="container">' +
-                    '      <div class="row">' +
+                x = x + '<div class="">' +
+                    '   <div class="container layout_padding">' +
+                    '      <div class="row about_section m-5">' +
                     '         <div class="col-sm-8">' +
                     '            <h2 class="about_taital">' + (i + 1) + ')  ' + coachingName + '</h2>' +
                     '   <h1 style="color:white;"> Faculty : ' + facultyName + ' </h1>' +
                     '   <h1 class: "news_taital" style="color:white;"> have more than <strong>' + experince + ' years of Experince</strong> </h1>' +
-                    '            <p class="about_text">' + description + '</p>' +
+                    '            <p class="about_text">' + mission + '</p>' +
                     '   <h3 style="color:white;"> Mainly expertize in ' + subject + " for " + exam + " exam" + ' </h3>' +
                     '   <h2 style="color:white;"> Contact number : ' + contact + ' </h2>' +
                     '   <h2 style="color:white;"> Email address : ' + email + ' </h2>' +
