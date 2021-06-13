@@ -241,6 +241,7 @@ button {
 
 .navbar {
     padding: 0px 25px 0px 25px;
+
 }
 
 .mr-auto,
@@ -269,7 +270,11 @@ button {
 }
 
 .navbar-expand-lg .navbar-collapse {
-    margin-top: -70px;
+
+}
+
+.i{
+  margin-bottom: 10px;
 }
 
 .search_icon {
@@ -299,13 +304,14 @@ button.donate_btn {
 .banner_section {
     width: 100%;
     float: left;
-    background-image: url(../images/banner-bg.png);
+    background-image: url(../images/education1.png);
     height: auto;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     top: -70px;
     margin-bottom: 0;
+    margin-top: 70px !important;
 }
 
 .banner_taital {
@@ -502,11 +508,10 @@ button.donate_btn {
 /* about section start */
 
 .about_section {
-    margin: auto;
-    /* width: 80%; */
-    /* float: left; */
+    width: 100%;
+    float: left;
     background-color: #120a78;
-    margin: 48px 90px ;
+    padding-bottom: 90px;
 }
 
 .about_img {
@@ -1062,45 +1067,40 @@ button.donate_btn {
 .footer_section {
     width: 100%;
     float: left;
-    background-color: #222122;
+    background-color: black;
     height: auto;
 }
 
-.social_icon {
-    width: 100%;
-    float: left;
+.container-md{
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
-.social_icon ul {
-    margin: 0px;
-    padding: 0px;
-}
 
-.social_icon li {
-    float: left;
-    padding-right: 15px;
-    padding-top: 40px;
-}
+
 
 .footer_taital {
     width: 100%;
     float: left;
     font-size: 20px;
-    color: #ffffff;
+    color: white;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .footer_text {
     width: 100%;
     float: left;
     font-size: 17px;
-    color: #afafaf;
+    color: white;
     margin: 5px 0px;
+    text-align: center;
 }
 
 .footer_menu_main {
     width: 100%;
     float: left;
+    margin-left: 3rem;
 }
 
 .footer_menu_left {
@@ -1108,10 +1108,21 @@ button.donate_btn {
     float: left;
 }
 
+.footer_menu_left li{
+  margin-top: 2px !important;
+  margin-bottom: 1px;
+}
+
 .footer_menu_right {
     width: 50%;
-    float: left;
+    float: right;
 }
+
+.footer_menu_right li{
+  margin-top: 2px !important;
+  margin-bottom: 2px;
+}
+
 
 .footer_menu {
     width: 100%;
@@ -1134,11 +1145,11 @@ button.donate_btn {
 }
 
 .footer_menu li a {
-    color: #afafaf;
+    color: white !important;
 }
 
 .footer_menu li a:hover {
-    color: #afafaf;
+    color:#e83e8c!important;
 }
 
 .footer_menu li.active::before,
@@ -1155,6 +1166,23 @@ button.donate_btn {
     left: -20px;
     top: 27%;
     border-radius: 100%;
+}
+
+.footer_text a{
+  color: white;
+}
+
+
+.footer_text a:hover{
+  color: #e83e8c;
+}
+
+.footer_end{
+  color: White;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 50px;
 }
 
 .address_text {
@@ -1190,8 +1218,35 @@ input.address_text::placeholder {
 }
 
 
+
 /* footer section end */
 
+
+/* copyright section start */
+
+.copyright_section {
+    width: 100%;
+    float: left;
+    background-color: #222122;
+    height: auto;
+}
+
+.copyright_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    margin-left: 0px;
+    color: #fff;
+    text-align: center;
+}
+
+.copyright_text a {
+    color: #ffffff;
+}
+
+.copyright_text a:hover {
+    color: #ff5333;
+}
 
 
 /* copyright section end */
@@ -1199,4 +1254,15 @@ input.address_text::placeholder {
 .margin_top_90 {
     margin-top: 90px;
 }
+.cardElevation {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin: 0;
+    padding: 0;
 
+}
+
+.cardElevation:hover {
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+    border: 1.5px solid red;
+}

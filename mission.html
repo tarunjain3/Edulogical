@@ -27,49 +27,70 @@
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <!-- fonts -->
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
-      <!-- owl stylesheets --> 
+      <!-- owl stylesheets -->
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-   </head>
+    </head>
+
    <body>
+
       <!-- header section start -->
       <div class="header_section">
-         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand"><a href="index.html"><img src="images/logo.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                     <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="exams.html">Exams</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="coaching.html">Coaching</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="donate.html">Contribute</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="resources.html">Resources</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="contact.html">Contact Us</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="mission.html">Our Mission</a>
-                  </li>
-               </ul>
-               <form class="form-inline my-2 my-lg-0">
-                  <div class="search_icon"><a href="#"><img src="images/search-icon.png"></a></div>
-                  <button class="donate_btn" type="submit">Contribute Now</button>
-               </form>
-            </div>
-         </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light " >
+           <a class="navbar-brand"><a href="index.html"><img class"i" src="images/logo.png" width="300"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                       <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="exams.html">Exams</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="coaching.html">Coaching</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="resources.html">Resources</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Contribute Now
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="examForm.html">Exam information</a>
+                        <a class="dropdown-item" href="resourcesForm.html">Resources</a>
+                        <a class="dropdown-item" href="coachingForm.html">Coaching Institutes</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="mission.html">Our Mission</a>
+                    </li>
+                 </ul>
+                 <form class="form-inline my-2 my-lg-0">
+
+                   <div class = "btn-group">
+                     <button type = "button" class = "btn btn-secondary dropdown-toggle" data-toggle = "dropdown">
+                       Contribute Now
+                       <span class = "caret"></span>
+                     </button>
+                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                       <li class="mx-1"><a href = "examForm.html">Exam information</a></li>
+                       <li class="mx-1"><a href = "resourcesForm.html">Resources</a></li>
+                       <li class="mx-1"><a href = "coachingForm.html">Coaching Institutes</a></li>
+                     </ul>
+                   </div>
+
+                 </form>
+              </div>
+        </nav>
       </div>
       <!-- header section end -->
       <!-- mission section start -->
@@ -77,8 +98,9 @@
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
-                  <h1 class="mission_taital">Mission causes</h1>
-                  <p class="mission_text">going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+                  <h1 class="mission_taital">OUR MISSION </h1>
+                  <p class="mission_text"> Our mission is to help students of different fields  get well informed about different examinations, their details, resources and opportunities associated with that stream. </p>
+                  <p class="mission_text">The website is a result of interest in helping society by  providing  it's students, undergraduates, as well as graduates all information at one platform and calming them in their stressful days. They don't need to search all over the internet we've got that covered for them.</p>
                </div>
             </div>
          </div>
@@ -87,14 +109,14 @@
                <div class="offset-md-2"></div>
                <div class="col-md-5">
                   <div class="container_main">
-                     <img src="images/img-1.png" alt="Avatar" class="image">
+                     <img src="images/exam.jpg" alt="Avatar" class="image">
                      <div class="overlay">
                         <div class="text">
-                           <h4 class="some_text">whichalteration in some </h4>
-                           <p class="alteration_text">Alteration in some form, by injected humour, or randomised words whichalteration in some form, by injected humour, or randomised words which</p>
+                           <h4 class="some_text">Exam Information </h4>
+                           <p class="alteration_text">Get to Know about all important Exams that you can appear for.</p>
                            <div class="btn_main">
-                              <div class="donate_bt"><a href="#">Read More</a></div>
-                              <div class="donate_bt"><a href="donate.html">Contribute Now</a></div>
+                              <div class="donate_bt"><a href="exams.html">Read More</a></div>
+                              <div class="donate_bt"><a href="examForm.html">Contribute Now</a></div>
                            </div>
                         </div>
                      </div>
@@ -102,14 +124,16 @@
                </div>
                <div class="col-md-5">
                   <div class="container_main">
-                     <img src="images/img-2.png" alt="Avatar" class="image">
+                     <img src="images/students_exams.png" alt="Avatar" class="image">
                      <div class="overlay">
                         <div class="text">
-                           <h4 class="some_text">whichalteration in some </h4>
-                           <p class="alteration_text">Alteration in some form, by injected humour, or randomised words whichalteration in some form, by injected humour, or randomised words which</p>
+                           <h4 class="some_text"> Exam Information </h4>
+                           <p class="alteration_text">Keep yourself well updated about every small detail related to your exams.</p>
                            <div class="btn_main">
-                              <div class="donate_bt"><a href="#">Read More</a></div>
-                              <div class="donate_bt"><a href="donate.html">Contribute Now</a></div>
+                             <div class="btn_main">
+                                <div class="donate_bt"><a href="exams.html">Read More</a></div>
+                                <div class="donate_bt"><a href="examForm.html">Contribute Now</a></div>
+                             </div>
                            </div>
                         </div>
                      </div>
@@ -121,14 +145,14 @@
             <div class="row">
                <div class="col-md-5">
                   <div class="container_main">
-                     <img src="images/img-3.png" alt="Avatar" class="image">
+                     <img src="images/books.jpeg" alt="Avatar" class="image">
                      <div class="overlay">
                         <div class="text">
-                           <h4 class="some_text">whichalteration in some </h4>
-                           <p class="alteration_text">Alteration in some form, by injected humour, or randomised words whichalteration in some form, by injected humour, or randomised words which</p>
+                           <h4 class="some_text"> About Resources </h4>
+                           <p class="alteration_text">Get all the resources for your exam.</p>
                            <div class="btn_main">
-                              <div class="donate_bt"><a href="#">Read More</a></div>
-                              <div class="donate_bt"><a href="donate.html">Contribute Now</a></div>
+                              <div class="donate_bt"><a href="resources.html">Read More</a></div>
+                              <div class="donate_bt"><a href="resourcesForm.html">Contribute Now</a></div>
                            </div>
                         </div>
                      </div>
@@ -136,14 +160,14 @@
                </div>
                <div class="col-md-5">
                   <div class="container_main">
-                     <img src="images/img-4.png" alt="Avatar" class="image">
+                     <img src="images/book1.png" alt="Avatar" class="image">
                      <div class="overlay">
                         <div class="text">
-                           <h4 class="some_text">whichalteration in some </h4>
-                           <p class="alteration_text">Alteration in some form, by injected humour, or randomised words whichalteration in some form, by injected humour, or randomised words which</p>
+                           <h4 class="some_text"> About Resources </h4>
+                           <p class="alteration_text">We also provide video links to get a kickstart on your preparation.</p>
                            <div class="btn_main">
-                              <div class="donate_bt"><a href="#">Read More</a></div>
-                              <div class="donate_bt"><a href="donate.html">Contribute Now</a></div>
+                             <div class="donate_bt"><a href="resources.html">Read More</a></div>
+                             <div class="donate_bt"><a href="resourcesForm.html">Contribute Now</a></div>
                            </div>
                         </div>
                      </div>
@@ -157,14 +181,14 @@
                <div class="offset-md-2"></div>
                <div class="col-md-5">
                   <div class="container_main">
-                     <img src="images/img-5.png" alt="Avatar" class="image">
+                     <img src="images/coaching.jpg" alt="Avatar" class="image">
                      <div class="overlay">
                         <div class="text">
-                           <h4 class="some_text">whichalteration in some </h4>
-                           <p class="alteration_text">Alteration in some form, by injected humour, or randomised words whichalteration in some form, by injected humour, or randomised words which</p>
+                           <h4 class="some_text">Coaching Institutes </h4>
+                           <p class="alteration_text">We provide you the list of the best coaching Institutes around you.</p>
                            <div class="btn_main">
-                              <div class="donate_bt"><a href="#">Read More</a></div>
-                              <div class="donate_bt"><a href="donate.html">Contribute Now</a></div>
+                              <div class="donate_bt"><a href="coaching.html">Read More</a></div>
+                              <div class="donate_bt"><a href="coachingForm.html">Contribute Now</a></div>
                            </div>
                         </div>
                      </div>
@@ -172,14 +196,14 @@
                </div>
                <div class="col-md-5">
                   <div class="container_main">
-                     <img src="images/img-6.png" alt="Avatar" class="image">
+                     <img src="images/coaching1.jpeg" alt="Avatar" class="image">
                      <div class="overlay">
                         <div class="text">
-                           <h4 class="some_text">whichalteration in some </h4>
-                           <p class="alteration_text">Alteration in some form, by injected humour, or randomised words whichalteration in some form, by injected humour, or randomised words which</p>
+                           <h4 class="some_text">Coaching Institues </h4>
+                           <p class="alteration_text">These institues will definetly bridge the gap between you and your goals.</p>
                            <div class="btn_main">
-                              <div class="donate_bt"><a href="#">Read More</a></div>
-                              <div class="donate_bt"><a href="donate.html">Contribute Now</a></div>
+                             <div class="donate_bt"><a href="coaching.html">Read More</a></div>
+                             <div class="donate_bt"><a href="coachingForm.html">Contribute Now</a></div>
                            </div>
                         </div>
                      </div>
@@ -191,19 +215,19 @@
       <!-- mission section end -->
       <!-- footer section start -->
       <div class="footer_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-sm-6 col-md-6 col-lg-3">
-                  <div class="footer_logo"><img src="images/footer-logo.png"></div>
+         <div class="container-md ">
+            <div class="row footer_row gx-5" >
+               <div class="col-sm-6 col-md-6 col-lg-3 mt-4">
+                  <div class="footer_logo"><img src="images/logoFooter1.png " width="300"></div>
                </div>
-               <div class="col-sm-6 col-md-6 col-lg-3">
+               <div class="col-sm-6 col-md-6 col-lg-3 ">
                   <h4 class="footer_taital">NAVIGATION</h4>
                   <div class="footer_menu_main">
                      <div class="footer_menu_left">
                         <div class="footer_menu">
                            <ul>
                               <li><a href="index.html">Home</a></li>
-                              <li><a href="donate.html">Contribute</a></li>
+                              <li><a href="exams.html">Exams</a></li>
                               <li><a href="contact.html">Contact us</a></li>
                            </ul>
                         </div>
@@ -220,40 +244,31 @@
                   </div>
                </div>
                <div class="col-sm-6 col-md-6 col-lg-3">
-                  <h4 class="footer_taital">NEWS</h4>
-                  <p class="footer_text">Generators on the Internet</p>
-                  <p class="footer_text">Tend to repeat predefined</p>
-                  <p class="footer_text">Chunks as necessary, making</p>
+                 <h4 class="footer_taital">Feel Motivated</h4>
+                 <p class="footer_text">Success is no Accident.</p>
+                 <p class="footer_text">It is hard work.</p>
+                 <p class="footer_text">If it's hard it's probably</p>
+                 <p class="footer_text">worth it.</p>
                </div>
                <div class="col-sm-6 col-md-6 col-lg-3">
-                  <h4 class="footer_taital">address</h4>
-                  <p class="footer_text">Ave NW, Washington</p>
-                  <p class="footer_text">+01 1234567890</p>
-                  <p class="footer_text">demo@gmail.com</p>
-               </div>
-            </div>
-            <div class="footer_section_2">
-               <div class="row">
-                  <div class="col-sm-4 col-md-4 col-lg-3">
-                     <div class="social_icon">
-                        <ul>
-                           <li><a href="#"><img src="images/fb-icon.png"></a></li>
-                           <li><a href="#"><img src="images/twitter-icon.png"></a></li>
-                           <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
-                           <li><a href="#"><img src="images/instagram-icon.png"></a></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="col-sm-8 col-md-8 col-lg-9">
-                     <input type="text" class="address_text" placeholder="Enter your Enail" name="text">
-                     <button type="button" class="get_bt">SUBSCRIBE</button>
-                  </div>
+                  <h4 class="footer_taital">Connect with Us</h4>
+                  <p class="footer_text">Shubham Ratra -- <a href="https://www.linkedin.com/in/shubhamrattra/">linkedin</a> </p>
+                  <p class="footer_text">Srishti Bajoria -- <a href="https://www.linkedin.com/in/srishti-bajoria-79a1231b6/">linkedin</a> <a href="https://www.instagram.com/srishtibajoria1/">Instagram</a> </p>
+                  <p class="footer_text">Tanya Aggarwal -- <a href="https://www.linkedin.com/in/tanya-aggarwal13/"> linkedin</a> </p>
+                  <p class="footer_text">Tarun Jain -- <a href="https://www.linkedin.com/in/tarun38/">linkedin</a> </p>
+                  <p class="footer_text">Vinayak Vats -- <a href="https://www.linkedin.com/in/vinayak-vats-7b5222203/">linkedin</a> </p>
+
                </div>
             </div>
          </div>
+         <div class="footer_end">
+           <div class="container">
+             <p>NEVER DO TOMORROW WHAT YOU CAN DO TODAY.</p>
+           </div>
+         </div>
       </div>
       <!-- footer section end -->
-      
+
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
@@ -263,9 +278,8 @@
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
-      <!-- javascript --> 
+      <!-- javascript -->
       <script src="js/owl.carousel.js"></script>
-      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>    
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
    </body>
 </html>
-

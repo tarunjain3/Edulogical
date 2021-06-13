@@ -10,10 +10,11 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
    <!-- site metas -->
-   <title>Edumative</title>
+   <title>Edulogical</title>
    <meta name="keywords" content="">
    <meta name="description" content="">
    <meta name="author" content="">
+     <link rel="icon" href="images/logo2.png" width="300" height="00">
    <!-- bootstrap css -->
    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
    <!-- style css -->
@@ -33,6 +34,9 @@
    <link rel="stylesheet" href="css/owl.theme.default.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
       media="screen">
+          <!-- api implementation -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 </head>
 
 <body>
@@ -40,8 +44,8 @@
    <div class="header_section">
 
    </div>
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand"><a href="index.html"><img src="images/logo.png"></a>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light " >
+      <a class="navbar-brand"><a href="index.html"><img class"i" src="images/logo.png" width="300"></a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -58,10 +62,17 @@
                   <a class="nav-link" href="coaching.html">Coaching</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="donate.html">Contribute</a>
-               </li>
-               <li class="nav-item">
                   <a class="nav-link" href="resources.html">Resources</a>
+               </li>
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Contribute Now
+                 </a>
+                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="examForm.html">Exam information</a>
+                   <a class="dropdown-item" href="resourcesForm.html">Resources</a>
+                   <a class="dropdown-item" href="coachingForm.html">Coaching Institutes</a>
+                 </div>
                </li>
                <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact Us</a>
@@ -103,47 +114,47 @@
                <div class="carousel-item active">
                   <div class="row">
                      <div class="col-sm-12">
-                        <h1 class="banner_taital">Welcome to Edumative</h1>
-                        <p class="banner_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos et delectus
+                        <h1 class="banner_taital">Welcome to Edulogical</h1>
+                        <!--<p class="banner_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos et delectus
                            dolorem, repellat a rerum autem esse quia mollitia cum nisi nulla quas aperiam officiis in
-                           nemo deleniti natus possimus.</p>
-                        <!-- <div class="read_bt"><a href="#">Read More</a></div> -->
+                           nemo deleniti natus possimus.</p> -->
+                       <!-- <div class="read_bt"><a href="#">Read More</a></div> -->
                      </div>
                   </div>
                </div>
                <div class="carousel-item">
                   <div class="col-sm-12">
-                     <h1 class="banner_taital">Get all basic info of exam</h1>
-                     <p class="banner_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia adipisci
+                     <h1 class="banner_taital">Get exam full guidance</h1>
+                    <!-- <p class="banner_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia adipisci
                         recusandae suscipit, aperiam repudiandae architecto iure nam, non quidem velit consectetur,
-                        similique maiores ipsum nostrum quibusdam amet sit laboriosam eos. </p>
+                        similique maiores ipsum nostrum quibusdam amet sit laboriosam eos. </p> -->
                      <!-- <div class="read_bt"><a href="#">Read More</a></div> -->
                   </div>
                </div>
                <div class="carousel-item">
                   <div class="col-sm-12">
-                     <h1 class="banner_taital">Get best coaching recomendation</h1>
-                     <p class="banner_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quisquam quas
+                     <h1 class="banner_taital">Best coaching recomendation</h1>
+                     <!--<p class="banner_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quisquam quas
                         adipisci tempore illum at officia esse praesentium accusamus saepe? Quisquam mollitia dolor
-                        quibusdam, delectus inventore amet eos esse eligendi! </p>
+                        quibusdam, delectus inventore amet eos esse eligendi! </p> -->
                      <!-- <div class="read_bt"><a href="#">Read More</a></div> -->
                   </div>
                </div>
                <div class="carousel-item">
                   <div class="col-sm-12">
-                     <h1 class="banner_taital">Get to know best reosources</h1>
-                     <p class="banner_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde distinctio
+                     <h1 class="banner_taital">Get best reosources</h1>
+                     <!--<p class="banner_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde distinctio
                         earum blanditiis error excepturi magni quo provident repellendus veritatis voluptatum laboriosam
-                        praesentium magnam, amet modi ipsa animi maxime tenetur nulla. </p>
+                        praesentium magnam, amet modi ipsa animi maxime tenetur nulla. </p> -->
                      <!-- <div class="read_bt"><a href="#">Read More</a></div> -->
                   </div>
                </div>
                <div class="carousel-item">
                   <div class="col-sm-12">
-                     <h1 class="banner_taital">Don't forget to contribute as well</h1>
-                     <p class="banner_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis tenetur
+                     <h1 class="banner_taital">Contribute to help others </h1>
+                    <!-- <p class="banner_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis tenetur
                         delectus repudiandae alias impedit autem enim eligendi doloribus commodi recusandae, at possimus
-                        ea a ex dicta rerum praesentium atque eum.</p>
+                        ea a ex dicta rerum praesentium atque eum.</p> -->
                      <!-- <div class="read_bt"><a href="#">Read More</a></div> -->
                   </div>
                </div>
@@ -151,288 +162,195 @@
          </div>
       </div>
       <div class="donation_box">
-         <h4 class="donation_taital">Contact For Donation</h4>
+         <h1 class="text-center ">OUR PRIME FEATURES</h1>
          <div class="mail_box">
-            <input type="" class="mail_text" placeholder="Your Name" name="Your Name">
+            <!-- <input type="" class="mail_text" placeholder="Your Name" name="Your Name">
             <input type="" class="mail_text" placeholder="Email" name="Email">
-            <input type="" class="mail_text" placeholder="Phone" name="Phone">
+            <input type="" class="mail_text" placeholder="Phone" name="Phone"> -->
          </div>
-         <div class="send_bt"><a href="#">Send</a></div>
+         <!-- <div class="send_bt"><a href="#">Send</a></div> -->
       </div>
       <div class="fundraise_section">
          <div class="fundraise_section_main">
             <div class="row">
                <div class="col-lg-4">
                   <div class="box_main">
-                     <div class="icon_1"><img src="images/icon-1.png"></div>
-                     <h4 class="volunteer_text">VOLUNTEERS</h4>
-                     <p class="lorem_text">Lorem Ipsum generators on the Internet tend to repeat predefined</p>
-                     <div class="join_bt"><a href="#">Join Now</a></div>
+                     <div class="icon_1"><img src="images/exam_icon.png" width="170"></div>
+                     <h4 class="volunteer_text">EXAM INFO</h4>
+                    <!-- <p class="lorem_text">Lorem Ipsum generators on the Internet tend to repeat predefined</p> -->
+                     <div class="join_bt"><a href="exams.html">Know more</a></div>
                   </div>
                </div>
                <div class="col-lg-4">
                   <div class="box_main active">
-                     <div class="icon_1"><img src="images/icon-2.png"></div>
-                     <h4 class="volunteer_text">FUNDRAISE</h4>
-                     <p class="lorem_text">Lorem Ipsum generators on the Internet tend to repeat predefined</p>
-                     <div class="join_bt"><a href="#">Join Now</a></div>
+                     <div class="icon_1"><img src="images/books_icon.png" width="170"></div>
+                     <h4 class="volunteer_text">Resources</h4>
+                    <!-- <p class="lorem_text">Lorem Ipsum generators on the Internet tend to repeat predefined</p> -->
+                     <div class="join_bt"><a href="resources.html">Get resources</a></div>
                   </div>
                </div>
                <div class="col-lg-4">
                   <div class="box_main">
-                     <div class="icon_1"><img src="images/icon-3.png"></div>
-                     <h4 class="volunteer_text">DONATION</h4>
-                     <p class="lorem_text">Lorem Ipsum generators on the Internet tend to repeat predefined</p>
-                     <div class="join_bt"><a href="#">Join Now</a></div>
+                     <div class="icon_1"><img src="images/coaching_icon.png" width="170"></div>
+                     <h4 class="volunteer_text">Coaching</h4>
+                    <!-- <p class="lorem_text">Lorem Ipsum generators on the Internet tend to repeat predefined</p> -->
+                     <div class="join_bt"><a href="coaching.html">Join Now</a></div>
                   </div>
                </div>
             </div>
          </div>
       </div>
    </div>
+
    </div>
+
    <!-- banner section end -->
    <!-- about section start -->
+
    <div class="about_section layout_padding">
       <div class="container">
          <div class="row">
             <div class="col-sm-8">
-               <h2 class="about_taital">Coaching Edumative</h2>
-               <p class="about_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deserunt ut impedit
-                  atque. Quae distinctio sunt iure ut sapiente corrupti, amet maxime magni doloribus culpa omnis
-                  dolores. Eaque, corrupti provident. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Reiciendis, est sint! Nemo omnis delectus eligendi dolores ipsam corporis? Tenetur accusamus sapiente
-                  a cum? Odio reprehenderit laboriosam at, rerum illo dolore.
+               <h2 class="about_taital">About us</h2>
+               <h1 class="about_taital">We're an online platform providing competitive exam details and study resources</h1>
+               <p class="about_text">Founded by a team of 5 tech enthusiast in 2021. Edulogical aims to help students get confidently
+                 prepared for every exams and as well as opportunity in their pursued field. Our content and resources are freely
+                 available and we prefer to keep it that way to encourage our readers acquire as many skills and information as they would like to.
+                 Our motto is to nurture each individual passion and educational success.
                </p>
             </div>
             <div class="col-sm-4">
-               <div class="about_img"><img src="images/about-img.png"></div>
+               <div class="about_img"><img src="images/about.png"></div>
             </div>
          </div>
       </div>
    </div>
-   <!-- about section end -->
-   <!-- mission section start -->
-   <!-- <div class="mission_section layout_padding">
-      <div class="container">
-         <div class="row">
-            <div class="col-sm-12">
-               <h1 class="mission_taital">Mission causes</h1>
-               <p class="mission_text">going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
-                  embarrassing hidden in the middle of text. </p>
-            </div>
-         </div>
-      </div>
-      <div class="mission_section_2">
-         <div class="row">
-            <div class="offset-md-2"></div>
-            <div class="col-md-5">
-               <div class="container_main">
-                  <img src="images/img-1.png" alt="Avatar" class="image">
-                  <div class="overlay">
-                     <div class="text">
-                        <h4 class="some_text">whichalteration in some </h4>
-                        <p class="alteration_text">Alteration in some form, by injected humour, or randomised words
-                           whichalteration in some form, by injected humour, or randomised words which</p>
-                        <div class="btn_main">
-                           <div class="donate_bt"><a href="#">Read More</a></div>
-                           <div class="donate_bt"><a href="donate.html">Contribute Now</a></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-5">
-               <div class="container_main">
-                  <img src="images/img-2.png" alt="Avatar" class="image">
-                  <div class="overlay">
-                     <div class="text">
-                        <h4 class="some_text">whichalteration in some </h4>
-                        <p class="alteration_text">Alteration in some form, by injected humour, or randomised words
-                           whichalteration in some form, by injected humour, or randomised words which</p>
-                        <div class="btn_main">
-                           <div class="donate_bt"><a href="#">Read More</a></div>
-                           <div class="donate_bt"><a href="donate.html">Contribute Now</a></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="mission_section_2">
-         <div class="row">
-            <div class="col-md-5">
-               <div class="container_main">
-                  <img src="images/img-3.png" alt="Avatar" class="image">
-                  <div class="overlay">
-                     <div class="text">
-                        <h4 class="some_text">whichalteration in some </h4>
-                        <p class="alteration_text">Alteration in some form, by injected humour, or randomised words
-                           whichalteration in some form, by injected humour, or randomised words which</p>
-                        <div class="btn_main">
-                           <div class="donate_bt"><a href="#">Read More</a></div>
-                           <div class="donate_bt"><a href="donate.html">Contribute Now</a></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-5">
-               <div class="container_main">
-                  <img src="images/img-4.png" alt="Avatar" class="image">
-                  <div class="overlay">
-                     <div class="text">
-                        <h4 class="some_text">whichalteration in some </h4>
-                        <p class="alteration_text">Alteration in some form, by injected humour, or randomised words
-                           whichalteration in some form, by injected humour, or randomised words which</p>
-                        <div class="btn_main">
-                           <div class="donate_bt"><a href="#">Read More</a></div>
-                           <div class="donate_bt"><a href="donate.html">Contribute Now</a></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="offset-md-2"></div>
-         </div>
-      </div>
-      <div class="mission_section_2">
-         <div class="row">
-            <div class="offset-md-2"></div>
-            <div class="col-md-5">
-               <div class="container_main">
-                  <img src="images/img-5.png" alt="Avatar" class="image">
-                  <div class="overlay">
-                     <div class="text">
-                        <h4 class="some_text">whichalteration in some </h4>
-                        <p class="alteration_text">Alteration in some form, by injected humour, or randomised words
-                           whichalteration in some form, by injected humour, or randomised words which</p>
-                        <div class="btn_main">
-                           <div class="donate_bt"><a href="#">Read More</a></div>
-                           <div class="donate_bt"><a href="donate.html">Contribute Now</a></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-5">
-               <div class="container_main">
-                  <img src="images/img-6.png" alt="Avatar" class="image">
-                  <div class="overlay">
-                     <div class="text">
-                        <h4 class="some_text">whichalteration in some </h4>
-                        <p class="alteration_text">Alteration in some form, by injected humour, or randomised words
-                           whichalteration in some form, by injected humour, or randomised words which</p>
-                        <div class="btn_main">
-                           <div class="donate_bt"><a href="#">Read More</a></div>
-                           <div class="donate_bt"><a href="donate.html">Contribute Now</a></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div> -->
-   <!-- mission section end -->
-   <!-- news section start -->
+
    <div class="news_section layout_padding">
       <div class="container">
          <div class="row">
             <div class="col-sm-12">
-               <h1 class="news_taital">FEATURED CAUSE</h1>
-               <p class="news_text">going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
-                  embarrassing hidden in the middle of text. </p>
+               <h1 class="news_taital">POPULAR EXAMS</h1>
+              <!-- <p class="news_text">going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                  embarrassing hidden in the middle of text. </p> -->
             </div>
          </div>
-         <div class="news_section_2">
-            <div class="row">
-               <div class="col-md-6">
-                  <div class="news_img"><img src="images/news-img.png"></div>
-               </div>
-               <div class="col-md-6">
-                  <h1 class="give_taital">GIVE EDUCATION</h1>
-                  <p class="ipsum_text">variations of passages of Lorem Ipsum available, but the majority have suffered
-                     alteration in some form, by injected humour, or randomised variations of passages of Lorem Ipsum
-                     available, but the majority have suffered alteration in some form, by<br>
-                     injected humour, or randomised v<br>
-                     ariations of passages of Lorem Ipsum <br>
-                     available, but the majority have suffered alteration in some form, by injected humour, or
-                     randomised
-                  </p>
-                  <h5 class="raised_text">Raised: $60,010 <span class="goal_text">Goal: $70,000</span></h5>
-                  <div class="donate_btn_main">
-                     <div class="readmore_btn"><a href="#">Read More</a></div>
-                     <div class="readmore_btn_1"><a href="donate.html">Contribute Now</a></div>
-                  </div>
-               </div>
-            </div>
+         <br><br>
+         <div id="exams">
          </div>
       </div>
    </div>
+   <script>
+      var x = "";
+      var dataExam;
+      axios.get('https://edulogical.herokuapp.com/exams').then(response => {
+         console.log("api hit going on");
+         console.log(response.data);
+         dataExam = response.data;
+         var length = 2;
+         if (dataExam.length <=2) length = dataExam.length;
+         for (i = 0; i < length; i++) {
+            var date = dataExam[i]["Date"];
+            var detail = dataExam[i]["Detail"];
+            var docsReq = dataExam[i]["Documents_Required"];
+            var eligibiltyCreteria = dataExam[i]["Eligibility_Criteria"];
+            var examName = dataExam[i]["Exam_Name"];
+            var RegisterationFormLink = dataExam[i]["Registeration_Form_Link"];
+            var imgUrl = dataExam[i]["Image_url"];
+            var RegisterationFormLink = dataExam[i]["Registeration_Form_Link"];
+            x = x + '<div class="events_section_2 cardElevation m-5">' +
+               '      <div class="row">' +
+               '          <div class="col-md-5">' +
+               '              <div class="img_7"><img src= ' + imgUrl + ' class="img_7"></div>' +
+               '              <div class="date_bt">' +
+               '                  <div class="date_text active"><a href="#">01</a></div>' +
+               '                  <div class="date_text"><a href="#">FEB</a></div>' +
+               '              </div>' +
+               '          </div>' +
+               '          <div class="col-md-7">' +
+               '              <h1 class="give_taital_1">' + examName + '</h1>' +
+               '              <h5 class="raised_text_1">Registeration Date:<span class="goal_text">' + date + '</span></h5>' +
+               '              <p class="ipsum_text_1">' + detail + '</p>' +
+               '              <h5 ><b>Documents Required : </b> <span >' + docsReq + '</span></h5>' +
+               '              <h5 > <b>Eligibility Creteria : </b> <span >' + eligibiltyCreteria + '</span></h5>' +
+               '              <div class="donate_btn_main mr-auto">' +
+               '              <a href= ' + RegisterationFormLink + '><button type="button" class="btn launch btn-lg" style = " background-color: #120a78; color: white;">Read More</button></a>' +
+               '              </div>' +
+               '          </div>' +
+               '      </div><br><br>' +
+               '  </div>';
+         }
+         document.getElementById("exams").innerHTML = x;
+      });
+   </script>
    <!-- news section end -->
    <!-- events section start -->
    <div class="events_section layout_padding">
       <div class="container">
          <div class="row">
             <div class="col-sm-12">
-               <h1 class="news_taital">FEATURED CAUSE</h1>
-               <p class="news_text">going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
-                  embarrassing hidden in the middle of text. </p>
+               <h1 class="news_taital">TRENDING RESOURCES</h1>
+              <!-- <p class="news_text">going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                  embarrassing hidden in the middle of text. </p> -->
             </div>
          </div>
-         <div class="events_section_2">
-            <div class="row">
-               <div class="col-md-5">
-                  <div class="img_7"><img src="images/img-7.png" class="img_7"></div>
-                  <div class="date_bt">
-                     <div class="date_text active"><a href="#">01</a></div>
-                     <div class="date_text"><a href="#">FEB</a></div>
-                  </div>
-               </div>
-               <div class="col-md-7">
-                  <h1 class="give_taital_1">The Internet tend to repeat</h1>
-                  <p class="ipsum_text_1">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-                     roots in a piece of classical Latin literatureContrary to popular belief, Lorem Ipsum is not simply
-                     random text. It has roots in a piece of classical Latin literature</p>
-                  <h5 class="raised_text_1">Raised: $60,010 <span class="goal_text">Goal: $70,000</span></h5>
-                  <div class="donate_btn_main">
-                     <div class="readmore_btn"><a href="#">Read More</a></div>
-                     <div class="readmore_btn_1"><a href="donate.html">Contribute Now</a></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="events_section_2">
-            <div class="row">
-               <div class="col-md-5">
-                  <div class="img_7"><img src="images/img-8.png" class="img_7"></div>
-                  <div class="date_bt">
-                     <div class="date_text active"><a href="#">10</a></div>
-                     <div class="date_text"><a href="#">FEB</a></div>
-                  </div>
-               </div>
-               <div class="col-md-7">
-                  <h1 class="give_taital_1">The Internet tend to repeat</h1>
-                  <p class="ipsum_text_1">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-                     roots in a piece of classical Latin literatureContrary to popular belief, Lorem Ipsum is not simply
-                     random text. It has roots in a piece of classical Latin literature</p>
-                  <h5 class="raised_text_1">Raised: $60,010 <span class="goal_text">Goal: $70,000</span></h5>
-                  <div class="donate_btn_main">
-                     <div class="readmore_btn"><a href="#">Read More</a></div>
-                     <div class="readmore_btn_1"><a href="donate.html">Contribute Now</a></div>
-                  </div>
-               </div>
-            </div>
+         <div id="reosources">
          </div>
       </div>
    </div>
+   <script>
+      console.log("ready for api hit");
+      console.log("ready for api ended");
+      var y = "";
+      axios.get('https://edulogical.herokuapp.com/resources').then(response => {
+            console.log("api hit going on");
+            console.log(response.data);
+            data = response.data;
+
+     var length = 2;
+         if (data.length <=2) length = data.length;
+         for (i = 0; i < length; i++) {
+         var bookName = data[i]["Book_Name"];
+         var authorName = data[i]["Author_Name"];
+         var description = data[i]["Description"];
+         var bookImage = data[i]["Book_Image"];
+         var bookEdition = data[i]["Book_Edition"];
+         var Softcopy_OR_Hardcopy = data[i]["Softcopy_OR_Hardcopy"];
+         var Subject = data[i]["Subject"];
+         var resourceUrl = data[i]["Resource_url"];
+
+       
+         y = y + ' <div class="news_section layout_padding">' +
+            '   <div class="container">' +
+            '      <div class="news_section_2 cardElevation">' +
+            '         <div class="row">' +
+            '            <div class="col-md-5">' +
+            '               <div class="news_img"><img src="' + bookImage+ '"></div>' +
+            '            </div>' +
+            '              <div class="col-md-1"></div>' +
+            '            <div class="col-md-6">' +
+            '               <h1 class="give_taital">' + bookName + '</h1>' +
+            '                <h1> By ' + authorName + '</h1>' +
+            '                <h3> Subject :  ' + Subject + '</h3>' +
+            '               <p class="ipsum_text"> ' + description + ' </p>' +
+            '                <h3> Book edition : <b>' + bookEdition + '</b></h3>' +
+            '               <div class="donate_btn_main">' +
+            '<button type="button" class=" readmore_btn_1 "><a href='+ resourceUrl+'>Read More</a></div></button><br><br>' +
+            '               </div>' +
+            '            </div>' +
+            '         </div>' +
+            '      </div>' +
+            '   </div>' +
+            '</div>';
+      }
+      document.getElementById("reosources").innerHTML = y;
+   });
+   </script>
    <!-- events section end -->
    <!-- donate section start -->
-   <div class="donate_section layout_padding">
+  <!-- <div class="donate_section layout_padding">
       <div class="container">
-         <h1 class="donate_taital">Donat pepole Says </h1>
+         <h1 class="donate_taital">ANNOUNCEMENTS</h1>
          <div class="donate_taital_main">
             <div id="main_slider" class="carousel slide" data-ride="carousel">
                <div class="carousel-inner">
@@ -485,23 +403,23 @@
             </div>
          </div>
       </div>
-   </div>
+   </div> -->
    <!-- donate section end -->
    <!-- footer section start -->
    <div class="footer_section layout_padding">
-      <div class="container">
-         <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-3">
-               <div class="footer_logo"><img src="images/footer-logo.png"></div>
+      <div class="container-md ">
+         <div class="row footer_row gx-5" >
+            <div class="col-sm-6 col-md-6 col-lg-3 mt-4">
+               <div class="footer_logo"><img src="images/logoFooter1.png " width="300"></div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="col-sm-6 col-md-6 col-lg-3 ">
                <h4 class="footer_taital">NAVIGATION</h4>
                <div class="footer_menu_main">
                   <div class="footer_menu_left">
                      <div class="footer_menu">
                         <ul>
                            <li><a href="index.html">Home</a></li>
-                           <li><a href="donate.html">Contribute</a></li>
+                           <li><a href="exams.html">Exams</a></li>
                            <li><a href="contact.html">Contact us</a></li>
                         </ul>
                      </div>
@@ -518,36 +436,27 @@
                </div>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-3">
-               <h4 class="footer_taital">NEWS</h4>
-               <p class="footer_text">Generators on the Internet</p>
-               <p class="footer_text">Tend to repeat predefined</p>
-               <p class="footer_text">Chunks as necessary, making</p>
+              <h4 class="footer_taital">Feel Motivated</h4>
+              <p class="footer_text">Success is no Accident.</p>
+              <p class="footer_text">It is hard work.</p>
+              <p class="footer_text">If it's hard it's probably</p>
+              <p class="footer_text">worth it.</p>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-3">
-               <h4 class="footer_taital">address</h4>
-               <p class="footer_text">Ave NW, Washington</p>
-               <p class="footer_text">+01 1234567890</p>
-               <p class="footer_text">demo@gmail.com</p>
+               <h4 class="footer_taital">Connect with Us</h4>
+               <p class="footer_text">Shubham Ratra -- <a href="https://www.linkedin.com/in/shubhamrattra/">linkedin</a> </p>
+               <p class="footer_text">Srishti Bajoria -- <a href="https://www.linkedin.com/in/srishti-bajoria-79a1231b6/">linkedin</a> <a href="https://www.instagram.com/srishtibajoria1/">Instagram</a> </p>
+               <p class="footer_text">Tanya Aggarwal -- <a href="https://www.linkedin.com/in/tanya-aggarwal13/"> linkedin</a> </p>
+               <p class="footer_text">Tarun Jain -- <a href="https://www.linkedin.com/in/tarun38/">linkedin</a> </p>
+               <p class="footer_text">Vinayak Vats -- <a href="https://www.linkedin.com/in/vinayak-vats-7b5222203/">linkedin</a> </p>
+
             </div>
          </div>
-         <div class="footer_section_2">
-            <div class="row">
-               <div class="col-sm-4 col-md-4 col-lg-3">
-                  <div class="social_icon">
-                     <ul>
-                        <li><a href="#"><img src="images/fb-icon.png"></a></li>
-                        <li><a href="#"><img src="images/twitter-icon.png"></a></li>
-                        <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
-                        <li><a href="#"><img src="images/instagram-icon.png"></a></li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-sm-8 col-md-8 col-lg-9">
-                  <input type="text" class="address_text" placeholder="Enter your Enail" name="text">
-                  <button type="button" class="get_bt">SUBSCRIBE</button>
-               </div>
-            </div>
-         </div>
+      </div>
+      <div class="footer_end">
+        <div class="container">
+          <p>NEVER DO TOMORROW WHAT YOU CAN DO TODAY.</p>
+        </div>
       </div>
    </div>
    <!-- footer section end -->
