@@ -304,7 +304,7 @@ button.donate_btn {
 .banner_section {
     width: 100%;
     float: left;
-    background-image: url(../images/banner-bg.png);
+    background-image: url(../images/education1.png);
     height: auto;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1253,16 +1253,4 @@ input.address_text::placeholder {
 
 .margin_top_90 {
     margin-top: 90px;
-}
-.cardElevation {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-    transition: 0.3s;
-    padding: 16px;
-    margin: 2%;
-    background-color: rgba(0, 0, 0, 0.05);
-}
-
-.cardElevation:hover {
-    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.5);
-    border: 2px solid red;
 }
