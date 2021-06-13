@@ -145,7 +145,7 @@
          var bookEdition = data[i]["Book_Edition"];
          var Softcopy_OR_Hardcopy = data[i]["Softcopy_OR_Hardcopy"];
          var Subject = data[i]["Subject"];
-
+         var resourceUrl = data[i]["Resource_url"];
          x = x + ' <div class="news_section layout_padding">' +
             '   <div class="container">' +
             '      <div class="news_section_2 cardElevation">' +
@@ -161,7 +161,7 @@
             '               <p class="ipsum_text"> ' + description + ' </p>' +
             '                <h3> Book edition : <b>' + bookEdition + '</b></h3>' +
             '               <div class="donate_btn_main">' +
-            '<button type="button" class=" readmore_btn_1 " data-toggle="modal" data-target="#staticBackdrop"><a href="#">Read More</a></div></button><br><br>' +
+            '<button type="button" class=" readmore_btn_1 "><a href='+ resourceUrl+'>Read More</a></div></button><br><br>' +
             '               </div>' +
             '            </div>' +
             '         </div>' +
