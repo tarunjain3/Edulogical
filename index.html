@@ -34,9 +34,6 @@
    <link rel="stylesheet" href="css/owl.theme.default.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
       media="screen">
-          <!-- api implementation -->
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
 </head>
 
 <body>
@@ -211,9 +208,9 @@
       <div class="container">
          <div class="row">
             <div class="col-sm-8">
-               <h2 class="about_taital">About us</h2>
-               <h1 class="about_taital">We're an online platform providing competitive exam details and study resources</h1>
-               <p class="about_text">Founded by a team of 5 tech enthusiast in 2021. Edulogical aims to help students get confidently
+               <h2 class="about_taital" style="margin-top: 20px;">About us</h2>
+               <h3 class="about_taital" style="font-size: 30px;">We're an online platform providing competitive exam details and study resources</h3>
+               <p class="about_text" style="padding: 15px 0px;">Founded by a team of 5 tech enthusiast in 2021. Edulogical aims to help students get confidently
                  prepared for every exams and as well as opportunity in their pursued field. Our content and resources are freely
                  available and we prefer to keep it that way to encourage our readers acquire as many skills and information as they would like to.
                  Our motto is to nurture each individual passion and educational success.
@@ -243,7 +240,7 @@
    <script>
       var x = "";
       var dataExam;
-      axios.get('https://edulogical.herokuapp.com/exams').then(response => {
+      axios.get('https://dd3f117463d1.ngrok.io/exams').then(response => {
          console.log("api hit going on");
          console.log(response.data);
          dataExam = response.data;
@@ -258,7 +255,7 @@
             var RegisterationFormLink = dataExam[i]["Registeration_Form_Link"];
             var imgUrl = dataExam[i]["Image_url"];
             var RegisterationFormLink = dataExam[i]["Registeration_Form_Link"];
-            x = x + '<div class="events_section_2 cardElevation m-5">' +
+            x = x + '<div class="events_section_2 cardElevation">' +
                '      <div class="row">' +
                '          <div class="col-md-5">' +
                '              <div class="img_7"><img src= ' + imgUrl + ' class="img_7"></div>' +
@@ -277,8 +274,8 @@
                '              <a href= ' + RegisterationFormLink + '><button type="button" class="btn launch btn-lg" style = " background-color: #120a78; color: white;">Read More</button></a>' +
                '              </div>' +
                '          </div>' +
-               '      </div><br><br>' +
-               '  </div>';
+               '      </div>' +
+               '  </div><br><br>';
          }
          document.getElementById("exams").innerHTML = x;
       });
@@ -302,7 +299,7 @@
       console.log("ready for api hit");
       console.log("ready for api ended");
       var y = "";
-      axios.get('https://edulogical.herokuapp.com/resources').then(response => {
+      axios.get('https://dd3f117463d1.ngrok.io/resources').then(response => {
             console.log("api hit going on");
             console.log(response.data);
             data = response.data;
@@ -319,7 +316,6 @@
          var Subject = data[i]["Subject"];
          var resourceUrl = data[i]["Resource_url"];
 
-       
          y = y + ' <div class="news_section layout_padding">' +
             '   <div class="container">' +
             '      <div class="news_section_2 cardElevation">' +
@@ -335,7 +331,7 @@
             '               <p class="ipsum_text"> ' + description + ' </p>' +
             '                <h3> Book edition : <b>' + bookEdition + '</b></h3>' +
             '               <div class="donate_btn_main">' +
-            '<button type="button" class=" readmore_btn_1 "><a href='+ resourceUrl+'>Read More</a></div></button><br><br>' +
+            '<button type="button" class=" readmore_btn_1 "><a href='+ resourceUrl+'">Read More</a></div></button><br><br>' +
             '               </div>' +
             '            </div>' +
             '         </div>' +
