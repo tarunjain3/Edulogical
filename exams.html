@@ -117,54 +117,57 @@
     </div>
     <!-- header section end -->
     <!-- news section start -->
-    <div style="margin: 0% 25% 0% 25%" ;>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h1 class="news_taital">Exams</h1>
-                    <p class="news_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur voluptatibus
-                        sequi
-                        quas, ipsa obcaecati voluptatum a quod eos quae neque nihil est nemo laudantium eveniet, aperiam
-                        exercitationem ipsam, quos quibusdam. </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div id="exams"></div>
-    </div>
-    <script>
-        var x = "";
-        var data;
-        axios.get('https://edulogical.herokuapp.com/exams').then(response => {
-            console.log("api hit going on");
-            console.log(response.data);
-            data = response.data;
-       
-        for (i = 0; i < data.length; i++) {
-            var date = data[i]["Date"];
-            var detail = data[i]["Detail"];
-            var docsReq = data[i]["Documents_Required"];
-            var eligibiltyCreteria = data[i]["Eligibility_Criteria"];
-            var examName = data[i]["Exam_Name"];
-            var RegisterationFormLink = data[i]["Registeration_Form_Link"];
-            var imgUrl = data[i]["Image_url"];
-            var RegisterationFormLink = data[i]["Registeration_Form_Link"];
-            x = x + '<div class="events_section_2 cardElevation">' +
-                '      <div class="row">' +
-                '          <div class="col-md-5">' +
-                '              <div class="img_7"><img src= ' + imgUrl + ' class="img_7"></div>' +
-                '              <div class="date_bt">' +
-                '                  <div class="date_text active"><a href="#">01</a></div>' +
-                '                  <div class="date_text"><a href="#">FEB</a></div>' +
-                '              </div>' +
-                '          </div>' +
-                '          <div class="col-md-7">' +
-                '              <h1 class="give_taital_1">' + examName + '</h1>' +
-                '              <h5 class="raised_text_1">Registeration Date:<span class="goal_text">' + date + '</span></h5>' +
-                '              <p class="ipsum_text_1">' + detail + '</p>' +
-                '              <h5 ><b>Documents Required : </b> <span >' + docsReq + '</span></h5>' +
-                '              <h5 > <b>Eligibility Creteria : </b> <span >' + eligibiltyCreteria + '</span></h5>' +
+    <!-- header section end -->
+   <!-- news section start -->
+   <div style="margin: 0% 25% 0% 25%" ;>
+       <div class="container-fluid">
+           <div class="row">
+               <div class="col-sm-12">
+                   <h1 class="news_taital">Exams</h1>
+                   <p class="news_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur voluptatibus
+                       sequi
+                       quas, ipsa obcaecati voluptatum a quod eos quae neque nihil est nemo laudantium eveniet, aperiam
+                       exercitationem ipsam, quos quibusdam. </p>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="container">
+       <div id="exams"></div>
+   </div>
+   <script>
+       var x = "";
+       var data;
+       axios.get('https://dd3f117463d1.ngrok.io/exams').then(response => {
+           console.log("api hit going on");
+           console.log(response.data);
+           data = response.data;
+
+       for (i = 0; i < data.length; i++) {
+           var date = data[i]["Date"];
+           var detail = data[i]["Detail"];
+           var docsReq = data[i]["Documents_Required"];
+           var eligibiltyCreteria = data[i]["Eligibility_Criteria"];
+           var examName = data[i]["Exam_Name"];
+           var RegisterationFormLink = data[i]["Registeration_Form_Link"];
+           var imgUrl = data[i]["Image_url"];
+           var RegisterationFormLink = data[i]["Registeration_Form_Link"];
+           x = x + '<div class="events_section_2 cardElevation">' +
+               '      <div class="row">' +
+               '          <div class="col-md-5">' +
+               '              <div class="img_7"><img src= ' + imgUrl + ' class="img_7"></div>' +
+               '              <div class="date_bt">' +
+               '                  <div class="date_text active"><a href="#">01</a></div>' +
+               '                  <div class="date_text"><a href="#">FEB</a></div>' +
+               '              </div>' +
+               '          </div>' +
+               '          <div class="col-md-7">' +
+               '              <h1 class="give_taital_1">' + examName + '</h1>' +
+               '              <h5 class="raised_text_1">Registeration Date:<span class="goal_text">' + date + '</span></h5>' +
+               '              <p class="ipsum_text_1">' + detail + '</p>' +
+               '              <h5 ><b>Documents Required : </b> <span >' + docsReq + '</span></h5>' +
+               '              <h5 > <b>Eligibility Creteria : </b> <span >' + eligibiltyCreteria + '</span></h5>' +
+
                '              <div class="donate_btn_main mr-auto">' +
                '<a href= '+ RegisterationFormLink+'><button type="button" class="btn launch btn-lg" style = " background-color: #120a78; color: white;">  Read More</button></a>' +
                '              </div>' +
