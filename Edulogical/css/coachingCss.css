@@ -1,0 +1,279 @@
+body{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ background-size: 100% 100%;
+}
+
+.navbar-brand {
+    margin-right: 0px;
+}
+
+.navbar {
+    padding: 0px 25px 0px 25px;
+}
+
+ul.navbar-nav.mr-auto {
+    margin-top: 5rem !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0px 20px;
+    font-size: 16px;
+    color: #717172;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #041151;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #041151;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    margin-top: -70px;
+}
+
+h2{
+  font-family: 'open sans', sans-serif;
+  font-weight: 700;
+}
+
+p{
+  font-family: 'poppins',sans-serif;
+  font-weight: 300;
+}
+
+
+main{
+  background-color: rgba(228,239,231,0.7);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container {
+  max-width: 960px;
+
+}
+
+.heading{
+  font-family: 'Lobster', cursive;
+ font-family: 'Varela Round', sans-serif;
+}
+
+.heading2{
+    color: #e83e8c;
+    weight: bolder;
+    font-family: 'Squada One', sans-serif;
+    font-weight: bolder;
+}
+
+.contribute{
+  color: #e83e8c;
+  weight: bolder;
+  font-family: 'Squada One', sans-serif;
+  font-weight: bolder;
+}
+
+h5{
+  color:#3b14a7 ;
+  font-family: 'Rokkitt', serif;
+}
+
+.btn{
+  font-family: 'Limelight',serif;
+  background-color: #3b14a7 !important;
+}
+
+.btn:hover{
+  color :#e83e8c;
+}
+
+.g-recaptcha{
+  margin: auto;
+}
+
+
+.checkbox{
+  margin-left: 5px !important;
+}
+
+a{
+  color:#3b14a7 ;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  text-decoration: none !important;
+  outline: none !important;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+
+}
+
+
+a:hover{
+  color: #e83e8c;
+}
+
+/* footer_section */
+
+.footer_section {
+    width: 100%;
+    float: left;
+    /*background-color: rgba(228,239,231,0.7); */
+    height: auto;
+    background-color: black;
+
+}
+
+.footer_logo img{
+  background-color: black;
+}
+
+.footer_row{
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.footer_taital {
+    width: 100%;
+    float: left;
+    font-size: 20px;
+    color: White;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer_text {
+    width: 100%;
+    float: left;
+    font-size: 17px;
+    color: white;
+    margin: 5px 0px;
+    text-align: center;
+}
+
+.footer_text a{
+  color:white;
+}
+
+.footer_text a:hover{
+  color: #e83e8c;
+}
+
+.footer_menu_main {
+    width: 100%;
+    float: left;
+    margin-left: 3rem;
+}
+
+.footer_menu_left {
+    width: 50%;
+    float: left;
+}
+
+.footer_menu_left li{
+  margin-top: 2px !important;
+  margin-bottom: 1px;
+}
+
+.footer_menu_right {
+    width: 50%;
+    float: right;
+}
+
+.footer_menu_right li{
+  margin-top: 2px !important;
+  margin-bottom: 2px;
+}
+
+
+.footer_menu {
+    width: 100%;
+    float: left;
+}
+
+.footer_menu ul {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 15px;
+}
+
+.footer_menu li {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.footer_menu li a {
+    color: white;
+}
+
+.footer_menu li a:hover {
+    color: pink;
+}
+
+.footer_menu li.active::before,
+.footer_menu li:hover::before {
+    background-color: #ffffff;
+}
+
+.footer_menu li::before {
+    width: 10px;
+    height: 10px;
+    content: "";
+    background-color: #f64646;
+    position: absolute;
+    left: -20px;
+    top: 27%;
+    border-radius: 100%;
+}
+
+.footer_end{
+  color: White;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 50px;
+}
+
+.address_text {
+    width: 85%;
+    float: left;
+    font-size: 18px;
+    color: #969595;
+    padding: 5px 200px 5px 0px;
+    border: 0px;
+    background-color: transparent;
+    height: 60px;
+    margin-top: 20px;
+    border-bottom: 1px solid #656465;
+}
+
+input.address_text::placeholder {
+    color: #969595;
+}
+
+.get_bt {
+    width: 40%;
+    float: right;
+    font-size: 18px;
+    color: #f64646;
+    background-color: transparent;
+    padding: 10px 0px;
+    text-align: center;
+    border-radius: 30px;
+    position: relative;
+    top: -56px;
+    right: 5px;
+    font-weight: bold;
+}
