@@ -52,6 +52,12 @@
 
   <body style="background-image: url('download.jpg');"  width="300" height="100" >
 
+    <link rel="stylesheet" href="css/loader.css">
+   <!-- Loader -->
+   <div class="loader">
+       <img src="images/loader.gif" width="300px" height="300px" alt="loading">
+   </div>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
        <a class="navbar-brand"><a href="index.html"><img src="images/logo.png" width="300"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -73,14 +79,14 @@
              <a class="nav-link" href="resources.html">Resources</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Contribute Now
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="examForm.html">Exam information</a>
-              <a class="dropdown-item" href="resourcesForm.html">Resources</a>
-              <a class="dropdown-item" href="coachingForm.html">Coaching Institutes</a>
-            </div>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="examForm.html">Exam information</a></li>
+              <li><a class="dropdown-item" href="resourcesForm.html">Resources</a></li>
+              <li><a class="dropdown-item" href="coachingForm.html">Coaching Institutes</a></li>
+            </ul>
           </li>
           <li class="nav-item">
              <a class="nav-link" href="contact.html">Contact Us</a>
@@ -251,6 +257,7 @@
 
 
 <!-- JavaScript Bundle with Popper -->
+<script src="js/loader.js"></script>  <!--loader js file-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
       <script src="js\coachingJS.js"></script>
       <script src='https://www.google.com/recaptcha/api.js'></script>

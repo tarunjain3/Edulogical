@@ -56,6 +56,13 @@
 </head>
 
 <body>
+
+   <link rel="stylesheet" href="css/loader.css">
+   <!-- Loader -->
+   <div class="loader">
+       <img src="images/loader.gif" width="300px" height="300px" alt="loading">
+   </div>
+
    <!-- header section start -->
    <div class="header_section">
      <nav class="navbar navbar-expand-lg navbar-light bg-light " >
@@ -132,7 +139,7 @@
       console.log("ready for api hit");
       console.log("ready for api ended");
       var x = "";
-      axios.get('https://edulogical.herokuapp.com/resources').then(response => {
+      axios.get('http://f351badf5ceb.ngrok.io/resources').then(response => {
             console.log("api hit going on");
             console.log(response.data);
             data = response.data;
@@ -145,7 +152,7 @@
          var bookEdition = data[i]["Book_Edition"];
          var Softcopy_OR_Hardcopy = data[i]["Softcopy_OR_Hardcopy"];
          var Subject = data[i]["Subject"];
-         var resourceUrl = data[i]["Resource_url"];
+
          x = x + ' <div class="news_section layout_padding">' +
             '   <div class="container">' +
             '      <div class="news_section_2 cardElevation">' +
@@ -161,7 +168,7 @@
             '               <p class="ipsum_text"> ' + description + ' </p>' +
             '                <h3> Book edition : <b>' + bookEdition + '</b></h3>' +
             '               <div class="donate_btn_main">' +
-            '<button type="button" class=" readmore_btn_1 "><a href='+ resourceUrl+'>Read More</a></div></button><br><br>' +
+            '<button type="button" class=" readmore_btn_1 " data-toggle="modal" data-target="#staticBackdrop"><a href="#">Read More</a></div></button><br><br>' +
             '               </div>' +
             '            </div>' +
             '         </div>' +
@@ -174,7 +181,7 @@
    </script>
    <!-- news section end -->
    <!-- footer section start -->
-   <div class="footer_section layout_padding">
+   <div class="footer_section layout_padding" style="margin-top :30px !important; margin-bottom: 0px !important;">
       <div class="container-md ">
          <div class="row footer_row gx-5" >
             <div class="col-sm-6 col-md-6 col-lg-3 mt-4">
@@ -236,6 +243,7 @@
    <script src="js/bootstrap.bundle.min.js"></script>
    <script src="js/jquery-3.0.0.min.js"></script>
    <script src="js/plugin.js"></script>
+   <script src="js/loader.js"></script>  <!--loader js file-->
    <!-- sidebar -->
    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
    <script src="js/custom.js"></script>
