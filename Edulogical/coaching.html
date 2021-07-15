@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Exams</title>
+    <title>Coaching</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -29,43 +29,32 @@
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap"
         rel="stylesheet">
-    <!-- icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <!-- owl stylesheets -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
         media="screen">
-         <!-- api implementation -->
-   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- api implementation -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 
     <style>
         .cardElevation {
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
             transition: 0.3s;
-            padding: 16px;
-            margin: 2%;
-            background-color: rgba(0, 0, 0, 0.05);
+            margin: 0;
+            padding: 0;
+
         }
 
         .cardElevation:hover {
-            box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.5);
-            border: 2px solid red;
+            box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+            border: 1.5px solid red;
         }
     </style>
 </head>
 
 <body>
-
-   <link rel="stylesheet" href="css/loader.css">
-   <!-- Loader -->
-   <div class="loader">
-       <img src="images/loader.gif" width="300px" height="300px" alt="loading">
-   </div>
-
-
     <!-- header section start -->
     <div class="header_section">
       <nav class="navbar navbar-expand-lg navbar-light bg-light " >
@@ -125,68 +114,76 @@
     </div>
     <!-- header section end -->
     <!-- news section start -->
-    <!-- header section end -->
-   <!-- news section start -->
-   <div style="margin: 0% 25% 0% 25%" ;>
-       <div class="container-fluid">
-           <div class="row">
-               <div class="col-sm-12">
-                   <h1 class="news_taital">Exams</h1>
-                   <p class="news_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur voluptatibus
-                       sequi
-                       quas, ipsa obcaecati voluptatum a quod eos quae neque nihil est nemo laudantium eveniet, aperiam
-                       exercitationem ipsam, quos quibusdam. </p>
-               </div>
-           </div>
-       </div>
-   </div>
-   <div class="container">
-       <div id="exams"></div>
-   </div>
-   <script>
-       var x = "";
-       var data;
-       axios.get('https://dd3f117463d1.ngrok.io/exams').then(response => {
-           console.log("api hit going on");
-           console.log(response.data);
-           data = response.data;
+    <div style="margin: 0% 25% 0% 25%" ;>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="news_taital">Coaching centres</h1>
+                    <p class="news_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur voluptatibus
+                        sequi
+                        quas, ipsa obcaecati voluptatum a quod eos quae neque nihil est nemo laudantium eveniet, aperiam
+                        exercitationem ipsam, quos quibusdam. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="reosources"></div>
+    <script>
+        var coachingName = "Coaching Centre Name";
+        var facultyName = "Faculty Name";
+        var description = "variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by<br>injected humour, or randomised v<br>";
+        var experince = "10";
+        var address = "UIET,Sec-25, Chandigarh";
+        var contact = "1234567890";
+        var exam = "JEE";
+        var subject = "PCM";
+        var email = "abc@gmail.com";
+        var x = "";
+        var data;
+        axios.get('http://f351badf5ceb.ngrok.io/coaching').then(response => {
+            console.log("api hit going on");
+            console.log(response.data);
+            data = response.data;
 
-       for (i = 0; i < data.length; i++) {
-           var date = data[i]["Date"];
-           var detail = data[i]["Detail"];
-           var docsReq = data[i]["Documents_Required"];
-           var eligibiltyCreteria = data[i]["Eligibility_Criteria"];
-           var examName = data[i]["Exam_Name"];
-           var RegisterationFormLink = data[i]["Registeration_Form_Link"];
-           var imgUrl = data[i]["Image_url"];
-           var RegisterationFormLink = data[i]["Registeration_Form_Link"];
-           x = x + '<div class="events_section_2 cardElevation">' +
-               '      <div class="row">' +
-               '          <div class="col-md-5">' +
-               '              <div class="img_7"><img src= ' + imgUrl + ' class="img_7"></div>' +
-               '              <div class="date_bt">' +
-               '                  <div class="date_text active"><a href="#">01</a></div>' +
-               '                  <div class="date_text"><a href="#">FEB</a></div>' +
-               '              </div>' +
-               '          </div>' +
-               '          <div class="col-md-7">' +
-               '              <h1 class="give_taital_1">' + examName + '</h1>' +
-               '              <h5 class="raised_text_1">Registeration Date:<span class="goal_text">' + date + '</span></h5>' +
-               '              <p class="ipsum_text_1">' + detail + '</p>' +
-               '              <h5 ><b>Documents Required : </b> <span >' + docsReq + '</span></h5>' +
-               '              <h5 > <b>Eligibility Creteria : </b> <span >' + eligibiltyCreteria + '</span></h5>' +
 
-               '              <div class="donate_btn_main mr-auto">' +
-               '<a href= '+ RegisterationFormLink+'><button type="button" class="btn launch btn-lg" style = " background-color: #120a78; color: white;">  Read More</button></a>' +
-               '              </div>' +
-               '          </div>' +
-               '      </div>' +
-               '  </div><br><br>';
-       }
-       document.getElementById("exams").innerHTML = x;
 
-   });
-   </script>
+            for (i = 0; i < data.length; i++) {
+                coachingName = data[i]["Coaching_Name"];
+                facultyName = data[i]["Faculty_Name"];
+                // description = datat[i]["Description"];
+                address = data[i]["Address"];
+                experince = data[i]["Teaching_experience"];
+                contact = data[i]["Contact_Number"];
+                exam = data[i]["Exam"];
+                subject = data[i]["Subject"];
+                email = data[i]["Email"];
+
+
+                x = x + ' <div class="about_section layout_padding">' +
+                    '   <div class="container">' +
+                    '      <div class="row">' +
+                    '         <div class="col-sm-8">' +
+                    '            <h2 class="about_taital">' + (i + 1) + ')  ' + coachingName + '</h2>' +
+                    '   <h1 style="color:white;"> Faculty : ' + facultyName + ' </h1>' +
+                    '   <h1 class: "news_taital" style="color:white;"> have more than <strong>' + experince + ' years of Experince</strong> </h1>' +
+                    '            <p class="about_text">' + description + '</p>' +
+                    '   <h3 style="color:white;"> Mainly expertize in ' + subject + " for " + exam + " exam" + ' </h3>' +
+                    '   <h2 style="color:white;"> Contact number : ' + contact + ' </h2>' +
+                    '   <h2 style="color:white;"> Email address : ' + email + ' </h2>' +
+                    '   <h1 style="color:white;"><Strong> Address : ' + address + '</Strong> </h1> <br>' +
+                    ' <div class="readmore_btn_1" style="text-align: center;"><a href="#">Know More</a></div> <br><br>' +
+                    '         </div>' +
+                    '         <div class="col-sm-4">' +
+                    '            <div class="agbout_img"><img src="images/about-img.png"></div>' +
+                    '         </div>' +
+                    '      </div>' +
+                    '   </div>' +
+                    '</div>';
+            }
+            document.getElementById("reosources").innerHTML = x;
+
+        });
+    </script>
     <!-- news section end -->
     <!-- footer section start -->
     <div class="footer_section layout_padding">
@@ -241,17 +238,16 @@
             <p>NEVER DO TOMORROW WHAT YOU CAN DO TODAY.</p>
           </div>
         </div>
+
     </div>
     <!-- footer section end -->
 
     <!-- Javascript files-->
-
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/plugin.js"></script>
-    <script src="js/loader.js"></script>  <!--loader js file-->
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
