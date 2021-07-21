@@ -41,6 +41,13 @@
 </head>
 
 <body>
+
+   <link rel="stylesheet" href="css/loader.css">
+   <!-- Loader -->
+   <div class="loader">
+      <img src="images/loader.gif" width="300px" height="300px" alt="loading">
+   </div>
+
    <!-- header section start -->
    <div class="header_section">
 
@@ -86,15 +93,10 @@
             <form class="form-inline my-2 my-lg-0">
 
                <div class="btn-group">
-                  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
-                     Contribute Now
-                     <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                     <li class="mx-1"><a href="examForm.html">Exam information</a></li>
-                     <li class="mx-1"><a href="resourcesForm.html">Resources</a></li>
-                     <li class="mx-1"><a href="coachingForm.html">Coaching Institutes</a></li>
-                  </ul>
+                  <a class="btn btn-primary" href="signup.html" role="button" style="background-color: #F64646;">Sign
+                     Up</a>
+                  <a class="btn btn-primary" href="login.html" role="button"
+                     style="background-color: #120a78;">Login</a>
                </div>
 
             </form>
@@ -478,6 +480,9 @@
    <script src="js/bootstrap.bundle.min.js"></script>
    <script src="js/jquery-3.0.0.min.js"></script>
    <script src="js/plugin.js"></script>
+
+   <!--loader js file-->
+   <script src="js/loader.js"></script>
    <!-- sidebar -->
    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
    <script src="js/custom.js"></script>
