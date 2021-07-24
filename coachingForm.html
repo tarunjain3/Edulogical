@@ -263,6 +263,7 @@
                 axios.post('https://edulogical.herokuapp.com/createcoaching', x)
                     .then(function(response) {
                         console.log(response);
+                        window.location.href = 'coaching.html';
                     })
                     .catch(function(error) {
                         console.log(error);

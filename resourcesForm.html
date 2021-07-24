@@ -213,6 +213,7 @@
                 axios.post('https://edulogical.herokuapp.com/createresources', y)
                     .then(function(response) {
                         console.log(response);
+                        window.location.href = 'resources.html';
                     })
                     .catch(function(error) {
                         console.log(error);
