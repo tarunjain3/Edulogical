@@ -199,18 +199,18 @@
         <script>
             function resourceFormApiCall() {
                 console.log("resource form data : ");
-                var x = {
-                    Book_Name: document.getElementById("formData")["Book_Name"].value.toString(),
-                    Author_Name: document.getElementById("formData")["Author_Name"].value.toString(),
-                    Softcopy_OR_Hardcopy: document.getElementById("formData")["Softcopy_OR_Hardcopy"].value.toString(),
-                    Description: document.getElementById("formData")["Description"].value.toString(),
-                    Book_Image: document.getElementById("formData")["Book_Image"].value.toString(),
-                    Book_Edition: document.getElementById("formData")["Book_Edition"].value.toString(),
-                    Subject: document.getElementById("formData")["Subject"].value.toString(),
-                    Resource_url: document.getElementById("formData")["Resource_url"].value.toString(),
+                var y = {
+                    "Book_Name": document.getElementById("formData")["Book_Name"].value.toString(),
+                    "Author_Name": document.getElementById("formData")["Author_Name"].value.toString(),
+                    "Softcopy_OR_Hardcopy": document.getElementById("formData")["Softcopy_OR_Hardcopy"].value.toString(),
+                    "Description": document.getElementById("formData")["Description"].value.toString(),
+                    "Book_Image": document.getElementById("formData")["Book_Image"].value.toString(),
+                    "Book_Edition": document.getElementById("formData")["Book_Edition"].value.toString(),
+                    "Subject": document.getElementById("formData")["Subject"].value.toString(),
+                    "Resource_url": document.getElementById("formData")["Resource_url"].value.toString(),
                 };
-                console.log(x);
-                axios.post('https://edulogical.herokuapp.com/createresources', x)
+                console.log(y);
+                axios.post('https://edulogical.herokuapp.com/createresources', y)
                     .then(function(response) {
                         console.log(response);
                     })

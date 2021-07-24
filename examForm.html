@@ -207,11 +207,14 @@
                 axios.post('https://edulogical.herokuapp.com/createexams', x)
                     .then(function(response) {
                         console.log(response);
+                        window.location.href = 'exams.html';
                     })
                     .catch(function(error) {
                         console.log(error);
                     });
+                   
             }
+
         </script>
 
         <div class="footer_section layout_padding">
