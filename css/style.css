@@ -681,7 +681,7 @@ button.donate_btn {
 /* news section start */
 
 .news_section {
-    width: 90%;
+    width: 100%;
     float: right;
     padding: 25px;
 }
@@ -706,7 +706,7 @@ button.donate_btn {
 }
 
 .news_section_2 {
-    width: 90%;
+    width: 100%;
     /* float: right; */
     padding-top: 10px;
 }
