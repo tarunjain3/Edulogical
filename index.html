@@ -268,24 +268,20 @@
             var RegisterationFormLink = dataExam[i]["Registeration_Form_Link"];
             x = x + '<div class="events_section_2 cardElevation m-5">' +
                '      <div class="row">' +
-               '          <div class="col-md-5">' +
+               '          <div class="col-md-3">' +
                '              <div class="img_7"><img src= ' + imgUrl + ' class="img_7"></div>' +
-               // '              <div class="date_bt">' +
-               // '                  <div class="date_text active"><a href="#">01</a></div>' +
-               // '                  <div class="date_text"><a href="#">FEB</a></div>' +
-               // '              </div>' +
                '          </div>' +
-               '          <div class="col-md-7">' +
+               '          <div class="col-md-9">' +
                '              <h1 class="give_taital_1">' + examName + '</h1>' +
                '              <h5 class="raised_text_1">Registeration Date:<span class="goal_text">' + date + '</span></h5>' +
                '              <p class="ipsum_text_1">' + detail + '</p>' +
-               '              <h5 ><b>Documents Required : </b> <span >' + docsReq + '</span></h5>' +
-               '              <h5 > <b>Eligibility criteria : </b> <span >' + eligibiltyCreteria + '</span></h5>' +
+               '              <h3><b>Documents Required : </b> <span >' + docsReq + '</span></h3>' +
+               '              <h3> <b>Eligibility criteria : </b> <span >' + eligibiltyCreteria + '</span></h3>' +
                '              <div class="donate_btn_main mr-auto">' +
-               '              <a href= ' + RegisterationFormLink + '><button type="button" class="btn launch btn-lg" style = " background-color: #120a78; color: white;">Read More</button></a>' +
-               '              </div>' +
+               '              <a href= ' + RegisterationFormLink + '><button type="button" class="btn launch btn-lg" style = " background-color: #120a78; color: white;">  Read More</button></a>' +
+               '              </div><br><br>' +
                '          </div>' +
-               '      </div><br><br>' +
+               '      </div>' +
                '  </div>';
          }
          document.getElementById("exams").innerHTML = x;
@@ -332,18 +328,17 @@
                '   <div class="container">' +
                '      <div class="news_section_2 cardElevation">' +
                '         <div class="row">' +
-               '            <div class="col-md-5">' +
-               '               <div class="news_img"><img src="' + bookImage + '"></div>' +
+               '            <div class="col-md-4">' +
+               '               <div class="p-2" ><img src="' + bookImage + '"></div>' +
                '            </div>' +
-               '              <div class="col-md-1"></div>' +
-               '            <div class="col-md-6">' +
+               '            <div class="col-md-8">' +
                '               <h1 class="give_taital">' + bookName + '</h1>' +
                '                <h1> By ' + authorName + '</h1>' +
                '                <h3> Subject :  ' + Subject + '</h3>' +
                '               <p class="ipsum_text"> ' + description + ' </p>' +
                '                <h3> Book edition : <b>' + bookEdition + '</b></h3>' +
                '               <div class="donate_btn_main">' +
-               '<button type="button" class=" readmore_btn_1 "><a href=' + resourceUrl + '>Read More</a></div></button><br><br>' +
+               '                 <button type="button" class=" readmore_btn_1 "><a href=' + resourceUrl + '>Read More</a></div></button><br><br>' +
                '               </div>' +
                '            </div>' +
                '         </div>' +
