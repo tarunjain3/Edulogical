@@ -681,14 +681,15 @@ button.donate_btn {
 /* news section start */
 
 .news_section {
-    width: 100%;
-    float: left;
+    width: 90%;
+    float: right;
+    padding: 25px;
 }
 
 .news_taital {
     width: 100%;
     float: left;
-    font-size: 40px;
+    font-size: 22px;
     color: #1d1d1d;
     text-transform: uppercase;
     font-weight: bold;
@@ -698,35 +699,35 @@ button.donate_btn {
 .news_text {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 14px;
     color: #1b1b1b;
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
 }
 
 .news_section_2 {
-    width: 100%;
-    float: left;
-    padding-top: 40px;
+    width: 90%;
+    /* float: right; */
+    padding-top: 10px;
 }
 
 .give_taital {
     width: 100%;
     float: left;
-    font-size: 26px;
+    font-size: 20px;
     color: #1d1d1d;
     font-weight: bold;
-    padding-top: 60px;
+    padding-top: 10px;
     text-transform: uppercase;
 }
 
 .ipsum_text {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 18px;
     margin-left: 0px;
     color: #1b1b1b;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 
 .raised_text {
