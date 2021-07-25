@@ -71,7 +71,7 @@ h6 {
     letter-spacing: 0;
     font-weight: normal;
     position: relative;
-    padding: 0 0 10px 0;
+    padding: 0 0 6px 0;
     font-weight: normal;
     line-height: normal;
     color: #111111;
@@ -79,27 +79,27 @@ h6 {
 }
 
 h1 {
-    font-size: 24px
-}
-
-h2 {
-    font-size: 22px
-}
-
-h3 {
     font-size: 18px
 }
 
-h4 {
+h2 {
     font-size: 16px
 }
 
-h5 {
+h3 {
     font-size: 14px
 }
 
+h4 {
+    font-size: 12px
+}
+
+h5 {
+    font-size: 11px
+}
+
 h6 {
-    font-size: 13px
+    font-size: 10px
 }
 
 *,
@@ -217,8 +217,8 @@ button {
 }
 
 .layout_padding {
-    padding-top: 90px;
-    padding-bottom: 0px;
+    padding-top: 32px;
+    padding-bottom: 20px;
 }
 
 .padding_0 {
@@ -508,10 +508,9 @@ button.donate_btn {
 /* about section start */
 
 .about_section {
-    width: 100%;
-    float: left;
+    width: 90%;
+    float: right;
     background-color: #120a78;
-    padding-bottom: 90px;
 }
 
 .about_img {
@@ -522,10 +521,9 @@ button.donate_btn {
 .about_taital {
     width: 100%;
     float: left;
-    font-size: 40px;
+    font-size: 22px;
     color: #ffffff;
     text-transform: uppercase;
-    padding-top: 20px;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
 }
@@ -533,14 +531,14 @@ button.donate_btn {
 .about_text {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 14px;
     margin: 0px;
     color: #ffffff;
-    padding: 50px 0px;
+    padding: 12px 0px;
 }
 
 .readmore_bt {
-    width: 150px;
+    width: 120px;
     float: left;
     margin-top: 20px;
 }
