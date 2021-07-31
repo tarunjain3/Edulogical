@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
     <meta name="generator" content="Hugo 0.83.1" />
-    <title>Exam Information Form</title>
+    <title>Sign-up Form</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/" />
 
@@ -64,7 +64,7 @@
                     placeholder="Password" />
                 <label for="floatingPassword">Password</label>
             </div>
-            <button class="w-75 btn btn-primary btn-lg mb-4 mx-auto" onclick="signUpApi()" type="submit">
+            <button class="w-75 btn btn-primary btn-lg mb-4 mx-auto" onsubmit="signupApi()" onclick="signUpApi()" type="submit">
                 Sign-up
             </button>
 
@@ -75,22 +75,23 @@
         <script>
             console.log("test it");
             function signUpApi() {
-                console.log("signup form data : ");
-                var a = {
-                    User_Name: "test",
-                    Email: "test@gmail.com",
-                    Password: "123",
-                };
-                console.log(a);
-                Document.getElementById("test").innerhtml = a;
-                axios
-                    .post("https://edulogical.herokuapp.com/createsign_up", a)
-                    .then(function (response) {
-                        console.log(response);
-                    })
-                    .catch(function (error) {
-                        console.log(error);
-                    });
+                window.location.href = 'index.html';
+                // console.log("signup form data : ");
+                // var a = {
+                //     User_Name: "test",
+                //     Email: "test@gmail.com",
+                //     Password: "123",
+                // };
+                // console.log(a);
+                // Document.getElementById("test").innerhtml = a;
+                // axios
+                //     .post("https://edulogical.herokuapp.com/createsign_up", a)
+                //     .then(function (response) {
+                //         console.log(response);
+                //     })
+                //     .catch(function (error) {
+                //         console.log(error);
+                //     });
             }
         </script>
     </main>
