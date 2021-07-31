@@ -13,12 +13,14 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Varela+Round&display=swap" rel="stylesheet">
-
+    <!-- fevicon -->
+    <link rel="icon" href="images/logo2.png" width="300" height="00">
 
 
     <!-- Bootstrap core CSS -->
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -38,7 +40,7 @@
             -moz-user-select: none;
             user-select: none;
         }
-        
+
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
@@ -58,9 +60,10 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand">
             <a href="index.html"><img src="images/logo.png" width="300"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-          </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
@@ -76,7 +79,8 @@
                         <a class="nav-link" href="resources.html">Resources</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contribute Now</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contribute Now</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="examForm.html">Exam information</a>
                             <a class="dropdown-item" href="resourcesForm.html">Resources</a>
@@ -123,7 +127,8 @@
                         <div class="row g-3">
                             <div class="col-12">
                                 <label for="name" class="form-label">Exam Name</label>
-                                <input type="text" class="form-control" name="Exam_Name" id="name" placeholder="" value="" required>
+                                <input type="text" class="form-control" name="Exam_Name" id="name" placeholder=""
+                                    value="" required>
                                 <div class="invalid-feedback">
                                     Name is required.
                                 </div>
@@ -131,7 +136,8 @@
 
                             <div class="col-12">
                                 <label for="subject" class="form-label">Subject</label>
-                                <input type="text" class="form-control" name="Subject" id="subject" placeholder="Chemistry" required>
+                                <input type="text" class="form-control" name="Subject" id="subject"
+                                    placeholder="Chemistry" required>
                                 <div class="invalid-feedback">
                                     Please enter valid subjets.
                                 </div>
@@ -139,7 +145,8 @@
 
                             <div class="mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label">Detail</label>
-                                <textarea class="form-control" name="Detail" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                                <textarea class="form-control" name="Detail" id="exampleFormControlTextarea1" rows="3"
+                                    required></textarea>
                                 <div class="invalid-feedback">
                                     Detail is required.
                                 </div>
@@ -155,7 +162,8 @@
 
                             <div class="mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label">Eligibilty Criteria</label>
-                                <textarea class="form-control" name="Eligibility_Criteria" id="exampleFormControlTextarea1" rows="2" required></textarea>
+                                <textarea class="form-control" name="Eligibility_Criteria"
+                                    id="exampleFormControlTextarea1" rows="2" required></textarea>
                                 <div class="invalid-feedback">
                                     Detail is required.
                                 </div>
@@ -163,7 +171,8 @@
 
                             <div class="mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label">Documents Required</label>
-                                <textarea class="form-control" name="Documents_Required" id="exampleFormControlTextarea1" rows="2" required></textarea>
+                                <textarea class="form-control" name="Documents_Required"
+                                    id="exampleFormControlTextarea1" rows="2" required></textarea>
                                 <div class="invalid-feedback">
                                     This field is compulsory.
                                 </div>
@@ -171,7 +180,8 @@
 
                             <div class="col-12">
                                 <label for="link" class="form-label">Registration link </label>
-                                <input type="url" class="form-control" name="Registeration_Form_Link" id="link" required>
+                                <input type="url" class="form-control" name="Registeration_Form_Link" id="link"
+                                    required>
                                 <div class="invalid-feedback">
                                     Please enter a valid link.
                                 </div>
@@ -184,99 +194,105 @@
                                 </div>
                             </div>
                             <hr class="my-4">
-                            <button class="w-75 btn btn-primary btn-lg mb-4 mx-auto" onclick="examFormApiCall()" type="submit">SUBMIT</button>
+                            <button class="w-75 btn btn-primary btn-lg mb-4 mx-auto" onclick="examFormApiCall()"
+                                type="submit">SUBMIT</button>
 
                     </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        function examFormApiCall() {
+            console.log("exam form data : ");
+            var x = {
+                Exam_Name: document.getElementById("formData")["Exam_Name"].value.toString(),
+                Date: document.getElementById("formData")["Date"].value.toString(),
+                Detail: document.getElementById("formData")["Detail"].value.toString(),
+                Documents_Required: document.getElementById("formData")["Documents_Required"].value.toString(),
+                Eligibility_Criteria: document.getElementById("formData")["Eligibility_Criteria"].value.toString(),
+                Registeration_Form_Link: document.getElementById("formData")["Registeration_Form_Link"].value.toString(),
+                Image_url: document.getElementById("formData")["Image_url"].value.toString(),
+            };
+            console.log(x);
+            axios.post('https://edulogical.herokuapp.com/createexams', x)
+                .then(function (response) {
+                    console.log(response);
+                    window.location.href = 'exams.html';
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+
+        }
+
+    </script>
+
+    <!-- footer section start -->
+    <div class="footer_section layout_padding">
+        <div class="container-md ">
+            <div class="row footer_row gx-5">
+                <div class="col-sm-6 col-md-6 col-lg-3 mt-4">
+                    <div class="footer_logo"><img src="images/logoFooter1.png " width="300"></div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
+                    <h4 class="footer_taital">NAVIGATION</h4>
+                    <div class="footer_menu_main">
+                        <div class="footer_menu_left">
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="exams.html">Exams</a></li>
+                                    <li><a href="contact.html">Contact us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer_menu_right">
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="coaching.html">Coaching</a></li>
+                                    <li><a href="resources.html">Resources</a></li>
+                                    <li><a href="mission.html">Our Mission</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-        </main>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <h4 class="footer_taital">Address</h4>
+                    <p class="footer_text">UIET,sec-25,CHD</p>
+                    <p class="footer_text">+91 1234567890</p>
+                    <p class="footer_text">edu@gmail.com</p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <h4 class="footer_taital text-left">Connect with Us</h4>
+                    <p class="footer_text text-left">Shubham Ratra -- <a
+                            href="https://www.linkedin.com/in/shubhamrattra/">linkedin</a>
+                    </p>
+                    <p class="footer_text text-left">Srishti Bajoria -- <a
+                            href="https://www.linkedin.com/in/srishti-bajoria-79a1231b6/">linkedin</a></p>
+                    <p class="footer_text text-left">Tanya Aggarwal -- <a
+                            href="https://www.linkedin.com/in/tanya-aggarwal13/">
+                            linkedin</a> </p>
+                    <p class="footer_text text-left">Tarun Jain -- <a
+                            href="https://www.linkedin.com/in/tarun38/">linkedin</a> </p>
+                    <p class="footer_text text-left">Vinayak Vats -- <a
+                            href="https://www.linkedin.com/in/vinayak-vats-7b5222203/">linkedin</a> </p>
+
+                </div>
+            </div>
         </div>
-        <script>
-            function examFormApiCall() {
-                console.log("exam form data : ");
-                var x = {
-                    Exam_Name: document.getElementById("formData")["Exam_Name"].value.toString(),
-                    Date: document.getElementById("formData")["Date"].value.toString(),
-                    Detail: document.getElementById("formData")["Detail"].value.toString(),
-                    Documents_Required: document.getElementById("formData")["Documents_Required"].value.toString(),
-                    Eligibility_Criteria: document.getElementById("formData")["Eligibility_Criteria"].value.toString(),
-                    Registeration_Form_Link: document.getElementById("formData")["Registeration_Form_Link"].value.toString(),
-                    Image_url: document.getElementById("formData")["Image_url"].value.toString(),
-                };
-                console.log(x);
-                axios.post('https://edulogical.herokuapp.com/createexams', x)
-                    .then(function(response) {
-                        console.log(response);
-                        window.location.href = 'exams.html';
-                    })
-                    .catch(function(error) {
-                        console.log(error);
-                    });
-                   
-            }
-
-        </script>
-
-<!-- footer section start -->
-<div class="footer_section layout_padding">
-    <div class="container-md ">
-       <div class="row footer_row gx-5">
-          <div class="col-sm-6 col-md-6 col-lg-3 mt-4">
-             <div class="footer_logo"><img src="images/logoFooter1.png " width="300"></div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-3 ">
-             <h4 class="footer_taital">NAVIGATION</h4>
-             <div class="footer_menu_main">
-                <div class="footer_menu_left">
-                   <div class="footer_menu">
-                      <ul>
-                         <li><a href="index.html">Home</a></li>
-                         <li><a href="exams.html">Exams</a></li>
-                         <li><a href="contact.html">Contact us</a></li>
-                      </ul>
-                   </div>
-                </div>
-                <div class="footer_menu_right">
-                   <div class="footer_menu">
-                      <ul>
-                         <li><a href="coaching.html">Coaching</a></li>
-                         <li><a href="resources.html">Resources</a></li>
-                         <li><a href="mission.html">Our Mission</a></li>
-                      </ul>
-                   </div>
-                </div>
-             </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-3">
-             <h4 class="footer_taital">Address</h4>
-             <p class="footer_text">UIET,sec-25,CHD</p>
-             <p class="footer_text">+91 1234567890</p>
-             <p class="footer_text">edu@gmail.com</p>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-3">
-             <h4 class="footer_taital text-left">Connect with Us</h4>
-             <p class="footer_text text-left">Shubham Ratra -- <a href="https://www.linkedin.com/in/shubhamrattra/">linkedin</a>
-             </p>
-             <p class="footer_text text-left">Srishti Bajoria -- <a
-                   href="https://www.linkedin.com/in/srishti-bajoria-79a1231b6/">linkedin</a></p>
-             <p class="footer_text text-left">Tanya Aggarwal -- <a href="https://www.linkedin.com/in/tanya-aggarwal13/">
-                   linkedin</a> </p>
-             <p class="footer_text text-left">Tarun Jain -- <a href="https://www.linkedin.com/in/tarun38/">linkedin</a> </p>
-             <p class="footer_text text-left">Vinayak Vats -- <a
-                   href="https://www.linkedin.com/in/vinayak-vats-7b5222203/">linkedin</a> </p>
-
-          </div>
-       </div>
     </div>
- </div>
- <!-- footer section end -->
+    <!-- footer section end -->
 
 
 
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-        <script src="js\coachingJS.js"></script>
-        <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="js\coachingJS.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 
 </html>
