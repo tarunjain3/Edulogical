@@ -71,7 +71,7 @@ h6 {
     letter-spacing: 0;
     font-weight: normal;
     position: relative;
-    padding: 0 0 10px 0;
+    padding: 0 0 6px 0;
     font-weight: normal;
     line-height: normal;
     color: #111111;
@@ -79,27 +79,27 @@ h6 {
 }
 
 h1 {
-    font-size: 24px
-}
-
-h2 {
-    font-size: 22px
-}
-
-h3 {
     font-size: 18px
 }
 
-h4 {
+h2 {
     font-size: 16px
 }
 
-h5 {
+h3 {
     font-size: 14px
 }
 
+h4 {
+    font-size: 12px
+}
+
+h5 {
+    font-size: 11px
+}
+
 h6 {
-    font-size: 13px
+    font-size: 10px
 }
 
 *,
@@ -217,8 +217,8 @@ button {
 }
 
 .layout_padding {
-    padding-top: 90px;
-    padding-bottom: 0px;
+    padding-top: 32px;
+    padding-bottom: 20px;
 }
 
 .padding_0 {
@@ -508,10 +508,9 @@ button.donate_btn {
 /* about section start */
 
 .about_section {
-    width: 100%;
-    float: left;
+    /* width: 90%; */
+    float: right;
     background-color: #120a78;
-    padding-bottom: 90px;
 }
 
 .about_img {
@@ -522,10 +521,9 @@ button.donate_btn {
 .about_taital {
     width: 100%;
     float: left;
-    font-size: 40px;
+    font-size: 22px;
     color: #ffffff;
     text-transform: uppercase;
-    padding-top: 20px;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
 }
@@ -533,14 +531,14 @@ button.donate_btn {
 .about_text {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 14px;
     margin: 0px;
     color: #ffffff;
-    padding: 50px 0px;
+    padding: 12px 0px;
 }
 
 .readmore_bt {
-    width: 150px;
+    width: 120px;
     float: left;
     margin-top: 20px;
 }
@@ -684,13 +682,14 @@ button.donate_btn {
 
 .news_section {
     width: 100%;
-    float: left;
+    float: right;
+    padding: 25px;
 }
 
 .news_taital {
     width: 100%;
     float: left;
-    font-size: 40px;
+    font-size: 22px;
     color: #1d1d1d;
     text-transform: uppercase;
     font-weight: bold;
@@ -700,7 +699,7 @@ button.donate_btn {
 .news_text {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 14px;
     color: #1b1b1b;
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
@@ -708,27 +707,27 @@ button.donate_btn {
 
 .news_section_2 {
     width: 100%;
-    float: left;
-    padding-top: 40px;
+    /* float: right; */
+    padding-top: 10px;
 }
 
 .give_taital {
     width: 100%;
     float: left;
-    font-size: 26px;
+    font-size: 20px;
     color: #1d1d1d;
     font-weight: bold;
-    padding-top: 60px;
+    padding-top: 10px;
     text-transform: uppercase;
 }
 
 .ipsum_text {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 18px;
     margin-left: 0px;
     color: #1b1b1b;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 
 .raised_text {
@@ -811,25 +810,25 @@ button.donate_btn {
 }
 
 .events_section_2 {
-    width: 100%;
-    float: left;
+    /* width: 90%; */
+    float: right;
     padding-top: 30px;
 }
 
 .give_taital_1 {
     width: 100%;
     float: left;
-    font-size: 26px;
+    font-size: 22px;
     color: #1d1d1d;
     font-weight: bold;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     text-transform: uppercase;
 }
 
 .ipsum_text_1 {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 0px;
     color: #1b1b1b;
 }
@@ -837,7 +836,7 @@ button.donate_btn {
 .raised_text_1 {
     width: 100%;
     float: left;
-    font-size: 20px;
+    font-size: 16px;
     color: #120a78;
     font-weight: bold;
     text-transform: uppercase;
@@ -845,7 +844,7 @@ button.donate_btn {
 }
 
 .img_7 {
-    width: 100%;
+    height: 100%;
     float: left;
     position: relative;
 }
