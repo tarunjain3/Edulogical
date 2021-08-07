@@ -20,6 +20,7 @@ for Block diagram refer this [Block diagram](https://lucid.app/lucidchart/invita
 - [Tarun Jain](https://github.com/tarunjain3)
 - [Tanya Aggarwal](https://github.com/TanyaAggrawal)
 - [Shubham Rattra](https://github.com/ShubhamRattra)
+- [Srishti Bajoria](https://github.com/SrishtiBajoria)
 - [Vinayak Vats](https://github.com/Kingsmaan)
 
 
